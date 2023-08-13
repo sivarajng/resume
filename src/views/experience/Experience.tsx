@@ -1,21 +1,20 @@
 import {
   Avatar,
   Badge,
-  Card,
-  Center,
+  Divider,
   Group,
+  List,
   Paper,
   SimpleGrid,
   Stack,
   Text,
-  ThemeIcon,
   Title,
+  useMantineTheme,
 } from '@mantine/core';
 import { SECTIONS } from '../../config/config';
 
-import { createStyles, rem } from '@mantine/core';
+import { IconCircleFilled, IconDevices } from '@tabler/icons-react';
 import { commomStyles } from '../../styles/commmon';
-import { IconDevices } from '@tabler/icons-react';
 
 const Feature = ({
   id,
@@ -33,24 +32,21 @@ const Feature = ({
   const { classes } = commomStyles();
 
   let renderIcon: React.ReactNode;
+  const theme = useMantineTheme();
 
   renderIcon = <IconDevices size={28} stroke={1.5} />;
 
   return (
     <Paper withBorder radius="md" className={classes.card} key={id}>
       <Group>
-        <Avatar
-          src={icon}
-          color="red"
-          style={{ border: border ? '1px solid #00000033' : undefined }}
-        />
+        <Avatar src={icon} style={{ border: border ? '1px solid #00000033' : undefined }} />
         <Text size="lg" weight={600} className={classes.colorTheme}>
           {company}
         </Text>
       </Group>
 
       <Stack spacing={5}>
-        <Text size="xl" weight={600} mt="md" color={'blue'}>
+        <Text size="xl" weight={600} mt="xs" color={'blue'}>
           {designation}
         </Text>
 
@@ -61,21 +57,55 @@ const Feature = ({
 
           <Text size="sm" weight={500} color="dimmed">
             {tech.map((t: string, idx: number) => (
-              <Badge color={'gray'} variant="light" mr={2}>
-                {' '}
-                {t}{' '}
+              <Badge
+                color={'gray.6'}
+                variant="light"
+                mr={2}
+                styles={{
+                  inner: {
+                    textTransform: 'none',
+                  },
+                }}
+              >
+                {t}
               </Badge>
             ))}
           </Text>
         </Group>
       </Stack>
 
-      <Text size="md" mt="sm">
-        {summary.join(', ')}
+      <Divider pb={4} mt={10} color="gray.3" />
+      <Text fw={500} color="dimmed">
+        Summary
       </Text>
-      <Text size="md" mt="sm">
-        {achievement.join(', ')}
+
+      <List size={'sm'}>
+        {summary.map((item: any, index: number) => {
+          return (
+            <List.Item
+              icon={<IconCircleFilled size="0.5rem" style={{ color: theme.colors.teal[5] }} />}
+              key={index + 'sum'}
+            >
+              <Text dangerouslySetInnerHTML={{ __html: item }} />
+            </List.Item>
+          );
+        })}
+      </List>
+      <Text fw={500} pt={8} color="dimmed">
+        Achievements
       </Text>
+      <List size={'sm'}>
+        {achievement.map((item: any, index: number) => {
+          return (
+            <List.Item
+              icon={<IconCircleFilled size="0.5rem" style={{ color: theme.colors.teal[5] }} />}
+              key={index + 'sum'}
+            >
+              <Text dangerouslySetInnerHTML={{ __html: item }} />
+            </List.Item>
+          );
+        })}
+      </List>
     </Paper>
   );
 };
@@ -92,10 +122,10 @@ const Experience = () => {
       <Title order={2} className={classes.title}>
         {experiences.title}
       </Title>
-      {/* 
-            <Text size="md" className={classes.description}>
-                {description}
-            </Text> */}
+
+      {/* <Text size="md" className={classes.description}>
+        {experiences.description}
+      </Text> */}
 
       <SimpleGrid
         mt={40}

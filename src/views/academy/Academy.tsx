@@ -1,4 +1,4 @@
-import { Badge, Card, Center, Group, SimpleGrid, Text, Title } from '@mantine/core';
+import { Badge, Card, Group, SimpleGrid, Text, Title } from '@mantine/core';
 import { SECTIONS } from '../../config/config';
 
 import { createStyles, rem } from '@mantine/core';
@@ -131,10 +131,10 @@ const Academy = () => {
       <Title order={2} className={classes.title}>
         {academy.title}
       </Title>
-      {/* 
-            <Text size="md" className={classes.description}>
-                {description}
-            </Text> */}
+
+      {/* <Text size="md" className={classes.description}>
+        {academy?.description || ""}
+      </Text> */}
 
       <SimpleGrid
         mt={40}

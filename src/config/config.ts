@@ -1,3 +1,7 @@
+import { testimonials } from './testimonials';
+
+const iconPrefix = '/resume';
+// const iconPrefix = '';
 const SECTIONS = {
   linkedin: {
     url: 'https://www.linkedin.com/in/sivaraj-nagaraj/',
@@ -28,9 +32,15 @@ const SECTIONS = {
     description:
       'I am a Data Engineer and Multi-Stack Engineer who actively worked in multiple streams of tech like Python, Java, Javascript, Backend, Frontend, DevOps, MLOps, Chat Bots, Mobile App, Cloud to name a few and worked with many cross teams like Data Science, Product, Revenue, Infra.',
     list: [
-      'Had helped Orgs to achieve business outcomes with my 10 years of expertise in the software technology  industry, specifically in modern Data Stacks and  Frameworks.',
-      'An unique and innovative Data Engineer and Multi-Stack Engineer who actively worked in multiple streams of tech like Python, Java, Javascript, Backend, Frontend, DevOps, MLOps, Chat Bots, Mobile App, Cloud to name a few and worked with many cross teams like Data Science, Product, Revenue, Infra.',
-      'As a business aligned developer, my day-to-day work includes contributing to Org’s OKR Plan, Architecting, Building Solutions and Automations to get the desired business outputs and outcomes and being capable of delivering the same with your business.',
+      `<b style='font-weight:500;' >Had helped Organizations to achieve business outcomes with my 10 years of expertise</b> in the software
+      technology industry, specifically in modern Data Stacks and Frameworks.`,
+      `<b style='font-weight:500;' >Had built Products and Features from scratch in Startups, worked in High Scale Distributed Systems and
+      Voluminous Event Streams</b> with low latency and optimized services as a core part.`,
+      `<b style='font-weight:500;' >An unique and innovative Data Engineer and Multi-Stack Developer</b> who actively working in multiple streams
+      of tech like <b style='font-weight:500;' >Python, Java, JavaScript, Backend, Frontend, DevOps, MLOps, Chat Bots, Mobile App, Cloud</b> to
+      name a few and working with many cross teams like Data Science, Product, Revenue, Infra.`,
+      `<b style='font-weight:500;' >As a Business Aligned Developer</b>, my day-to-day work includes <b style='font-weight:500;' >contributing to Org’s OKR Plans, Architecting,
+      Building Solutions, Product Features, Automations, Optimizations</b> to get the desired business results.`,
     ],
   },
   experiences: {
@@ -43,15 +53,26 @@ const SECTIONS = {
         location: 'Bengaluru',
         from: 'Jul 2018',
         to: 'Present',
-        icon: '/static/mpl.jpg',
-        tech: ['Data Engineer', 'ML Engineer', 'React', 'Python', 'Mobile App', 'Java'],
+        icon: iconPrefix + '/static/mpl.jpg',
+        tech: [
+          'Data Engineer',
+          'ML Engineer',
+          'Mobile App Developer',
+          'Python',
+          'Java',
+          'TypeScript',
+        ],
         summary: [
-          'Working as an Mobile App (React Native) and Backend (Node.js) developer by designing and developing both Frontend and Backend modules as well as developing API Services.',
-          'Worked on Multi domain Mobile apps and API services like Food catalogue (Zomato), Book Movie Tickets (Justickets), Cab  Booking (Ola), Content (News/Media) oriented Apps as an extension to the core app.',
-          'Strong programming Skills in JavaScript (ECMA2016 / ES6 Standard), Mobility, Web technologies and Scripting Languages.',
+          'As a Data Engineer working on various Data pipelines like Segmentation, Ingestion etc. and Event Driven Systems. Developed high scale backend services and UI dashboards. key architect of MPL Frontend App.',
+          'Works closely with the Data Science team and builds solutions which bring business impacts.',
+          'Build variuos backend micro services like Dynamic Price Forecasting Service, Home Page & Tournaments Personalization Service, Multi-Player Score Calculation Service, Kafka Event Driven User Tasks Service, Data Relay Service, User Segmentation Service etc.',
+          'Build varoius core frontend modules like Login, Home Page, Wallet, Profile, Refer & Earn, Help Center, Notifications, User Tasks, Payments of the MPL App',
         ],
         achievement: [
-          '<b>In a short span of time involved, developed and published apps</b> like Online Food catalogue, Movie Ticket Book, Cab Book and optimizations for existing apps was much appreciated by Product Manager.',
+          'Archited the MPL Frontend App from Scratch.',
+          'Built low-latency and high scale backend and ML services which are the core part of the MPL App.',
+          'Built handfull of Automations and Optimizations which brought business impacts.',
+          'Recognized and got appreciated thrice in Company’s All Hands Meetings for implementing solutions and processes which made positive impacts to the teams and business.',
         ],
       },
       {
@@ -60,10 +81,10 @@ const SECTIONS = {
         location: 'Bengaluru',
         from: 'Dec 2017',
         to: 'Jul 2018',
-        icon: '/static/hike.png',
-        tech: ['Data Engineer', 'ML Engineer', 'React', 'Python', 'Mobile App', 'Java'],
+        icon: iconPrefix + '/static/hike.png',
+        tech: ['Mobile App Developer', 'React Native', 'Android', 'JavaScript'],
         summary: [
-          'Working as an Mobile App (React Native) and Backend (Node.js) developer by designing and developing both Frontend and Backend modules as well as developing API Services.',
+          'Worked as an Mobile App (React Native) and Backend (Node.js) developer by designing and developing both Frontend and Backend modules as well as developing API Services.',
           'Worked on Multi domain Mobile apps and API services like Food catalogue (Zomato), Book Movie Tickets (Justickets), Cab  Booking (Ola), Content (News/Media) oriented Apps as an extension to the core app.',
           'Strong programming Skills in JavaScript (ECMA2016 / ES6 Standard), Mobility, Web technologies and Scripting Languages.',
         ],
@@ -76,13 +97,19 @@ const SECTIONS = {
         company: 'Brillio',
         location: 'Bengaluru',
         from: 'Mar 2017',
-        to: 'Present',
-        icon: '/static/brillio.jpg',
-        tech: ['Data Engineer', 'ML Engineer', 'React', 'Python', 'Mobile App', 'Java'],
+        to: 'Dec 2017',
+        icon: iconPrefix + '/static/brillio.jpg',
+        tech: [
+          'React.JS',
+          'JavaScript',
+          'Mobile App Developer',
+          'MERN Stack Developer',
+          'Node.JS Developer',
+        ],
         summary: [
-          'Working as a MEAN Stack (Node, Angular, MongoDB, Express) Developer by designing and developing both Frontend and Backend modules as well as developing API Services.',
-          'Managing a team of four peoples and experienced in deploying Cloud Solutions like Microsoft Azure, Heroku and IBM Bluemix.',
-          'Also working in compliance with Agile Methodologies through JIRA and Visual Studio Team Services.',
+          'Worked as a MEAN Stack (Node, Angular, MongoDB, Express) Developer by designing and developing both Frontend and Backend modules as well as developing API Services.',
+          'Managed a team of four peoples and experienced in deploying Cloud Solutions like Microsoft Azure, Heroku and IBM Bluemix.',
+          'Also worked in compliance with Agile Methodologies through JIRA and Visual Studio Team Services.',
           'Strong programming Skills in NodeJS (ECMA2016 / ES6 Standard), Core Java, Mobility, Web technologies and Scripting Languages.',
           'Worked on Hybrid Mobile App Developments (Android / iOS) by leveraging high end frameworks like Ionic and React-Native.',
         ],
@@ -98,9 +125,9 @@ const SECTIONS = {
         location: 'Bengaluru',
         from: 'Apr 2015',
         to: 'Mar 2017',
-        icon: '/static/infosys.png',
+        icon: iconPrefix + '/static/infosys.png',
         border: true,
-        tech: ['Data Engineer', 'ML Engineer', 'React', 'Python', 'Mobile App', 'Java'],
+        tech: ['Mainframe System Migration', 'Android', 'Business Reporting', 'Java Developer'],
         summary: [
           'Worked as a Technology Analyst with good knowledge of HealthCare and Retail Chain business processes.',
         ],
@@ -118,10 +145,10 @@ const SECTIONS = {
         location: 'Pune',
         from: 'Dec 2012',
         to: 'Apr 2015',
-        icon: '/static/syntel.png',
+        icon: iconPrefix + '/static/syntel.png',
         border: true,
 
-        tech: ['Data Engineer', 'ML Engineer', 'React', 'Python', 'Mobile App', 'Java'],
+        tech: ['Mainframe Developer', 'COBOL', 'IBM z/OS', 'DB2', 'System Support'],
         summary: [
           'Worked as an Analyst Programmer in Healthcare Vertical under Application Development and Support projects.',
         ],
@@ -134,7 +161,7 @@ const SECTIONS = {
   },
   academy: {
     title: 'Academic Proficiency',
-    description: 'Education and certification that I have obtained.',
+    // description: 'Education and certification that I have obtained.',
     list: [
       {
         id: 'B.E.',
@@ -202,19 +229,23 @@ const SECTIONS = {
     {
       name: 'IBM Cloud Platform Application Development V1 (Bluemix)',
       tag: 'ibm',
-      icon: '/images/skills/ibm.png',
+      icon: iconPrefix + '/images/skills/ibm.png',
     },
     {
       name: 'IBM Rational Associate Application Developer V8',
       tag: 'ibm',
-      icon: '/images/skills/ibm.png',
+      icon: iconPrefix + '/images/skills/ibm.png',
     },
-    { name: 'IBM DB2 9 Fundamentals Certification', tag: 'ibm', icon: '/images/skills/ibm.png' },
+    {
+      name: 'IBM DB2 9 Fundamentals Certification',
+      tag: 'ibm',
+      icon: iconPrefix + '/images/skills/ibm.png',
+    },
 
     {
       name: 'Learning Bootstrap 2 ',
       tag: 'lynda',
-      icon: '/images/skills/lynda.png',
+      icon: iconPrefix + '/images/skills/lynda.png',
       certificateNo: '1F2E96EF62A1482898F022A033FD60DF',
       certificateUrl:
         'https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=1F2E96EF62A1482898F022A033FD60DF',
@@ -222,7 +253,7 @@ const SECTIONS = {
     {
       name: 'Focus on Your Skills ',
       tag: 'lynda',
-      icon: '/images/skills/lynda.png',
+      icon: iconPrefix + '/images/skills/lynda.png',
       certificateNo: '32DEE3491A3E4B349614CCE4AEF8B914',
       certificateUrl:
         'https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=32DEE3491A3E4B349614CCE4AEF8B914',
@@ -230,7 +261,7 @@ const SECTIONS = {
     {
       name: 'Bootstrap 3 Essential Training ',
       tag: 'lynda',
-      icon: '/images/skills/lynda.png',
+      icon: iconPrefix + '/images/skills/lynda.png',
       certificateNo: '1A5D1D958613470E993C81B8BE2FD73F',
       certificateUrl:
         'https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=1A5D1D958613470E993C81B8BE2FD73F',
@@ -238,7 +269,7 @@ const SECTIONS = {
     {
       name: 'Learning Node.js ',
       tag: 'lynda',
-      icon: '/images/skills/lynda.png',
+      icon: iconPrefix + '/images/skills/lynda.png',
       certificateNo: '6BB52F29A77D491EA226A063DAE86D9B',
       certificateUrl:
         'https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=6BB52F29A77D491EA226A063DAE86D9B',
@@ -246,7 +277,7 @@ const SECTIONS = {
     {
       name: 'Learning Visual Studio Team Services ',
       tag: 'lynda',
-      icon: '/images/skills/lynda.png',
+      icon: iconPrefix + '/images/skills/lynda.png',
       certificateNo: '12CC3B173EB14DC5B8AE2E3C9077CE97',
       certificateUrl:
         'https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=12CC3B173EB14DC5B8AE2E3C9077CE97',
@@ -254,7 +285,7 @@ const SECTIONS = {
     {
       name: 'Visual Studio 2013 for Windows Store Developers ',
       tag: 'lynda',
-      icon: '/images/skills/lynda.png',
+      icon: iconPrefix + '/images/skills/lynda.png',
       certificateNo: '95F389FBA674478995CF308669AE9035',
       certificateUrl:
         'https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=95F389FBA674478995CF308669AE9035',
@@ -262,7 +293,7 @@ const SECTIONS = {
     {
       name: 'Learning React.js ',
       tag: 'lynda',
-      icon: '/images/skills/lynda.png',
+      icon: iconPrefix + '/images/skills/lynda.png',
       certificateNo: 'AA8E74B9F16C4D77B1EE2C4C68DBA4D4',
       certificateUrl:
         'https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=AA8E74B9F16C4D77B1EE2C4C68DBA4D4',
@@ -270,7 +301,7 @@ const SECTIONS = {
     {
       name: 'React Native: Building Mobile Apps ',
       tag: 'lynda',
-      icon: '/images/skills/lynda.png',
+      icon: iconPrefix + '/images/skills/lynda.png',
       certificateNo: '559F58334EA94D78B9FA3287D64AE376',
       certificateUrl:
         'https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=559F58334EA94D78B9FA3287D64AE376',
@@ -278,7 +309,7 @@ const SECTIONS = {
     {
       name: 'Reactive Programming in iOS with RxSwift ',
       tag: 'lynda',
-      icon: '/images/skills/lynda.png',
+      icon: iconPrefix + '/images/skills/lynda.png',
       certificateNo: '94737F1117EB4601B1969BD42E7E5552',
       certificateUrl:
         'https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=94737F1117EB4601B1969BD42E7E5552',
@@ -286,7 +317,7 @@ const SECTIONS = {
     {
       name: 'Building a Mobile App with AngularJS 1 and Ionic ',
       tag: 'lynda',
-      icon: '/images/skills/lynda.png',
+      icon: iconPrefix + '/images/skills/lynda.png',
       certificateNo: '0524470E580748769C73C624EA67643A',
       certificateUrl:
         'https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=0524470E580748769C73C624EA67643A',
@@ -294,7 +325,7 @@ const SECTIONS = {
     {
       name: 'Learning AngularJS 2 ',
       tag: 'lynda',
-      icon: '/images/skills/lynda.png',
+      icon: iconPrefix + '/images/skills/lynda.png',
       certificateNo: 'D11A077DB1334046B3E0F24F26804FA9',
       certificateUrl:
         'https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=D11A077DB1334046B3E0F24F26804FA9',
@@ -302,7 +333,7 @@ const SECTIONS = {
     {
       name: 'Learning Angular 2 Directives ',
       tag: 'lynda',
-      icon: '/images/skills/lynda.png',
+      icon: iconPrefix + '/images/skills/lynda.png',
       certificateNo: 'E2854E8E38A34EF78894564C59B27AC8',
       certificateUrl:
         'https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=E2854E8E38A34EF78894564C59B27AC8',
@@ -310,7 +341,7 @@ const SECTIONS = {
     {
       name: 'Ionic 2 and AngularFire2: Building Mobile Apps ',
       tag: 'lynda',
-      icon: '/images/skills/lynda.png',
+      icon: iconPrefix + '/images/skills/lynda.png',
       certificateNo: 'E0B94340A7E6452E80B8575A8161B169',
       certificateUrl:
         'https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=E0B94340A7E6452E80B8575A8161B169',
@@ -318,7 +349,7 @@ const SECTIONS = {
     {
       name: 'Learning ECMAScript 6 ',
       tag: 'lynda',
-      icon: '/images/skills/lynda.png',
+      icon: iconPrefix + '/images/skills/lynda.png',
       certificateNo: 'C032AC77591E4DDCBA42C7B57E2D4A5B',
       certificateUrl:
         'https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=C032AC77591E4DDCBA42C7B57E2D4A5B',
@@ -326,7 +357,7 @@ const SECTIONS = {
     {
       name: 'Learning React Native ',
       tag: 'lynda',
-      icon: '/images/skills/lynda.png',
+      icon: iconPrefix + '/images/skills/lynda.png',
       certificateNo: '45234589555146D1B3A8039C7858C020',
       certificateUrl:
         'https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=45234589555146D1B3A8039C7858C020',
@@ -334,7 +365,7 @@ const SECTIONS = {
     {
       name: 'Learning JIRA Software ',
       tag: 'lynda',
-      icon: '/images/skills/lynda.png',
+      icon: iconPrefix + '/images/skills/lynda.png',
       certificateNo: '275CBEDA825C47ECA85BED27F2C1C1CE',
       certificateUrl:
         'https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=275CBEDA825C47ECA85BED27F2C1C1CE',
@@ -342,7 +373,7 @@ const SECTIONS = {
     {
       name: 'Learning Redux ',
       tag: 'lynda',
-      icon: '/images/skills/lynda.png',
+      icon: iconPrefix + '/images/skills/lynda.png',
       certificateNo: 'E1B4ADB8393A4FC09C9273171E6FB239',
       certificateUrl:
         'https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=E1B4ADB8393A4FC09C9273171E6FB239',
@@ -350,7 +381,7 @@ const SECTIONS = {
     {
       name: 'Learning Cloud Computing: The Cloud and DevOps ',
       tag: 'lynda',
-      icon: '/images/skills/lynda.png',
+      icon: iconPrefix + '/images/skills/lynda.png',
       certificateNo: '2BAE4781D0784909A818F02549741B38',
       certificateUrl:
         'https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=2BAE4781D0784909A818F02549741B38',
@@ -358,7 +389,7 @@ const SECTIONS = {
     {
       name: 'Learning Cloud Computing: Cloud Security ',
       tag: 'lynda',
-      icon: '/images/skills/lynda.png',
+      icon: iconPrefix + '/images/skills/lynda.png',
       certificateNo: '9A16FE8D641D48C6B6C97313E13A3B9C',
       certificateUrl:
         'https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=9A16FE8D641D48C6B6C97313E13A3B9C',
@@ -366,7 +397,7 @@ const SECTIONS = {
     {
       name: 'Microsoft Cloud: Explore Cloud Services ',
       tag: 'lynda',
-      icon: '/images/skills/lynda.png',
+      icon: iconPrefix + '/images/skills/lynda.png',
       certificateNo: '4C9E31D0FCB94B34A9B49ADAF0B05FE9',
       certificateUrl:
         'https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=4C9E31D0FCB94B34A9B49ADAF0B05FE9',
@@ -374,7 +405,7 @@ const SECTIONS = {
     {
       name: 'Switching to ES6 in Node.js ',
       tag: 'lynda',
-      icon: '/images/skills/lynda.png',
+      icon: iconPrefix + '/images/skills/lynda.png',
       certificateNo: '5ABE2D8192304BCF81D88DFC84E31BAF',
       certificateUrl:
         'https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=5ABE2D8192304BCF81D88DFC84E31BAF',
@@ -382,7 +413,7 @@ const SECTIONS = {
     {
       name: 'Microsoft Azure for Developers ',
       tag: 'lynda',
-      icon: '/images/skills/lynda.png',
+      icon: iconPrefix + '/images/skills/lynda.png',
       certificateNo: 'E18D672AD77748CD89B03E7E84A6B05B',
       certificateUrl:
         'https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=E18D672AD77748CD89B03E7E84A6B05B',
@@ -390,7 +421,7 @@ const SECTIONS = {
     {
       name: 'Angular 2 Essential Training ',
       tag: 'lynda',
-      icon: '/images/skills/lynda.png',
+      icon: iconPrefix + '/images/skills/lynda.png',
       certificateNo: '1815E9F1EF6945309780F2E9F6B609D0',
       certificateUrl:
         'https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=1815E9F1EF6945309780F2E9F6B609D0',
@@ -398,7 +429,7 @@ const SECTIONS = {
     {
       name: 'Learning MongoDB ',
       tag: 'lynda',
-      icon: '/images/skills/lynda.png',
+      icon: iconPrefix + '/images/skills/lynda.png',
       certificateNo: '1BAD6892812D422C8651C8896C1A9799',
       certificateUrl:
         'https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=1BAD6892812D422C8651C8896C1A9799',
@@ -406,7 +437,7 @@ const SECTIONS = {
     {
       name: 'MEAN Stack and MongoDB: Development Techniques ',
       tag: 'lynda',
-      icon: '/images/skills/lynda.png',
+      icon: iconPrefix + '/images/skills/lynda.png',
       certificateNo: '6AE1FC0ABECF43EC9DD0A547D69AD9D2',
       certificateUrl:
         'https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=6AE1FC0ABECF43EC9DD0A547D69AD9D2',
@@ -414,7 +445,7 @@ const SECTIONS = {
     {
       name: 'Learning Java Lambda Expressions ',
       tag: 'lynda',
-      icon: '/images/skills/lynda.png',
+      icon: iconPrefix + '/images/skills/lynda.png',
       certificateNo: '6940D8B65D5141768B246E66B9213A5C',
       certificateUrl:
         'https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=6940D8B65D5141768B246E66B9213A5C',
@@ -422,7 +453,7 @@ const SECTIONS = {
     {
       name: 'Python 3 Essential Training ',
       tag: 'lynda',
-      icon: '/images/skills/lynda.png',
+      icon: iconPrefix + '/images/skills/lynda.png',
       certificateNo: 'F63522E214FC454EB43CC9EA8A7F6BDA',
       certificateUrl:
         'https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=F63522E214FC454EB43CC9EA8A7F6BDA',
@@ -430,13 +461,13 @@ const SECTIONS = {
     {
       name: 'Learning Python for Data Science, with Tim Fox and Elephant Scale ',
       tag: 'lynda',
-      icon: '/images/skills/lynda.png',
+      icon: iconPrefix + '/images/skills/lynda.png',
       certificateNo: '9C09495508B44EE4BFDD03D6FE13187F',
       certificateUrl:
         'https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=9C09495508B44EE4BFDD03D6FE13187F',
     },
 
-    { name: 'in update', tag: 'pluralsight', icon: '/images/skills/ps.ico' },
+    { name: 'in update', tag: 'pluralsight', icon: iconPrefix + '/images/skills/ps.ico' },
   ],
 
   projects: {
@@ -444,9 +475,81 @@ const SECTIONS = {
     description: 'Here are some of my projects that I have worked on.',
     list: [
       {
+        name: 'Data Product and Services',
+        client: '',
+        coreApplications: [
+          'Python',
+          'Java',
+          'PostgreSQL',
+          'MongoDB',
+          'Apache Kafka',
+          'Apache Camel EIP',
+          'Kubernetes',
+        ],
+        teamSize: 8,
+        from: 'from',
+        to: 'to',
+        summary: [
+          'Build variuos backend micro services like Kafka Event Driven User Tasks Service, Data Relay Service, User Segmentation Service, Feature Store Service etc.',
+        ],
+        roles: [
+          'Building Data Pipeline using Apache Kafka and Apache Camel EIP.',
+          'Building high scale, low-latency microservices using Java and Spring Boot.',
+          'Developing, Deploying, Maintaining and Scaling the existing Data Products.',
+          'Build UI Dashboards Interfaces using React.js to stakeholders to configure and monitor the Data Products.',
+        ],
+      },
+      {
+        name: 'Data Science and ML Inferecing Services',
+        client: '',
+        coreApplications: [
+          'Python',
+          'Databricks',
+          'SQL',
+          'Apache Spark',
+          'Apache Kafka',
+          'Redis',
+          'RedShift',
+          'PostgreSQL',
+          'SageMaker',
+          'Dataproc',
+        ],
+        teamSize: 8,
+        from: 'from',
+        to: 'to',
+        summary: [
+          "Implemented foundational MLOps process in Data Scicene Team by using Databrick's tools like MLflow, Delta Lake, Databricks Jobs, Feature Store, Model Registry, Git, Notebooks etc.",
+          'Build variuos backend micro-services like Dynamic Price Forecasting Service, Home Page & Tournaments Personalization Service, Multi-Player Score Calculation Service etc.',
+        ],
+        roles: [
+          'Works closely with Data Scientists to productionize their ML models.',
+          'Building high scale, low-latency microservices using Java and Python',
+          'Developing, Deploying, Maintaining and Scaling the existing Data Science/ML backend services.',
+          'Build UI Dashboards Interfaces using React.js to stakeholders to configure and validate the ML Service responses',
+        ],
+      },
+      {
+        name: 'MPL Mobile App (React-Native)',
+        client: '',
+        coreApplications: ['React-Native', 'Redux', 'JavaScript', 'Android'],
+        teamSize: 8,
+        from: 'from',
+        to: 'to',
+        summary: [
+          'Built the MPL Mobile App from scratch using React-Native and Redux.',
+          'Integrated with an array of third-party services like Firebase, CleverTap, Sentry.io, Appsflyer, etc.',
+          "Key person for the App's architecture and design.",
+        ],
+        roles: [
+          "Building the App's architecture and design.",
+          "Work on the design and development of the App's UI.",
+          'Build varoius core frontend modules like Login, Home Page, Wallet, Profile, Refer & Earn, Help Center, Notifications, User Tasks, Payments of the MPL App.',
+        ],
+      },
+      {
         name: 'MicroApps and Content App',
         client: '',
-        coreApplications: ['React-Native, Redux, Node.JS, MongoDB, Google Cloud Platform'],
+        coreApplications: ['React-Native', 'Redux', 'Node.JS', 'MongoDB', 'Google Cloud Platform'],
         teamSize: 8,
         from: 'from',
         to: 'to',
@@ -464,7 +567,15 @@ const SECTIONS = {
         name: 'Cloud Server and Mobile App for digitizing Dealer activities',
         client: 'Leading Car Manufacturer ',
         coreApplications: [
-          'NodeJS, AngularJS, MongoDB, Microsoft Azure, socket.io, Android, iOS, JIRA, SVN',
+          'NodeJS',
+          'AngularJS',
+          'MongoDB',
+          'Microsoft Azure',
+          'socket.io',
+          'Android',
+          'iOS',
+          'JIRA',
+          'SVN',
         ],
         teamSize: 8,
         from: 'from',
@@ -483,7 +594,16 @@ const SECTIONS = {
         name: 'Community based E-Commerece platform (Mobile App and API Services) ',
         client: 'Leading Pop Culture Toy Producer',
         coreApplications: [
-          'React-Native, ReactJS, NodeJS, Microsoft Azure, Android, iOS, JIRA, Git, Directus CMS, Google FireBase',
+          'React-Native',
+          'ReactJS',
+          'NodeJS',
+          'Microsoft Azure',
+          'Android',
+          'iOS',
+          'JIRA',
+          'Git',
+          'Directus CMS',
+          'Google FireBase',
         ],
         teamSize: 6,
         from: 'from',
@@ -502,7 +622,12 @@ const SECTIONS = {
         name: 'WebApp and Push Report Solution for a CPG customer',
         client: 'Well reputed Global Company in CPG and Retail Chain',
         coreApplications: [
-          'Java, AngularJS, Spring, PostgreSQL, Tomcat, Pentaho Business Analytics Server',
+          'Java',
+          'AngularJS',
+          'Spring',
+          'PostgreSQL',
+          'Tomcat',
+          'Pentaho Business Analytics Server',
         ],
         teamSize: 6,
         from: 'from',
@@ -521,7 +646,13 @@ const SECTIONS = {
         name: 'Reporting Solution for a CPG customer',
         client: 'Well reputed Global Company in CPG and Retail Chain',
         coreApplications: [
-          'Java, Pentaho Business Analytics, Data Integration, PostgreSQL, Tomcat, Selenium, AngularJS',
+          'Java',
+          'Pentaho Business Analytics',
+          'Data Integration',
+          'PostgreSQL',
+          'Tomcat',
+          'Selenium',
+          'AngularJS',
         ],
         teamSize: 15,
         from: 'from',
@@ -545,7 +676,12 @@ const SECTIONS = {
         name: 'Mobile OPC UA Client for accessing Plant KPI Data',
         client: 'A leading Manufacturing Industry',
         coreApplications: [
-          'Java, Mobility, Android Studio, OPC UA SDK, OPC UA Server/Client, DeviceAnywhere',
+          'Java',
+          'Mobility',
+          'Android Studio',
+          'OPC UA SDK',
+          'OPC UA Server/Client',
+          'DeviceAnywhere',
         ],
         teamSize: 4,
         from: 'from',
@@ -565,7 +701,19 @@ const SECTIONS = {
         name: 'Server/Application Migration and Testing',
         client: 'Well reputed Global Company in CPG and Retail Chain',
         coreApplications: [
-          'Java, AngularJS, Oracle, Pro*C, MS SQL Server, TFS, MicroFocus, HPQC, Shell Scripting, IBM WebSphere MQ, Visual Studio, SoapUI, HPUX',
+          'Java',
+          'AngularJS',
+          'Oracle',
+          'Pro*C',
+          'MS SQL Server',
+          'TFS',
+          'MicroFocus',
+          'HPQC',
+          'Shell Scripting',
+          'IBM WebSphere MQ',
+          'Visual Studio',
+          'SoapUI',
+          'HPUX',
         ],
         teamSize: 5,
         from: 'from',
@@ -602,94 +750,176 @@ const SECTIONS = {
     title: 'Technical Skill Sets',
     description:
       'I have worked on a wide range of technologies and tools. I have listed the ones I have worked on extensively.',
+
+    tabs: {
+      Programming: ['Python', 'Java', 'JavaScript / TypeScript', 'Basic SQL'],
+      'Frameworks, Applications, Libraries and Tools': [
+        'Flask',
+        'FastAPI',
+        'Spring Boot',
+        'JPA',
+        'Apache Camel EIP',
+        'React.JS',
+        'Material UI',
+        'Ant Design',
+        'Redux',
+        'Node.JS',
+        'Android',
+        'React Native',
+        'Shell',
+        'Express.JS',
+        'Jupyter Notebooks',
+        'SQLAlchemy',
+        'PostgreSQL',
+        'MongoDB',
+        'Redis',
+        'PySpark',
+        'RedShift',
+        'Pandas',
+        'Machine Learning',
+        'SciKit',
+        'EDA',
+        'Kubernetes',
+        'Docker',
+        'Helm Chart',
+        'ZooKeeper',
+        'Grafana',
+        'Kibana',
+        'CI/CD',
+        'Jenkins',
+        'Kafka Streams',
+        'ETL',
+        'NLP',
+        'MLOps',
+        'MLFlow',
+      ],
+      'Streams / Verticals': [
+        'UI Dashboards',
+        'Mobile Apps',
+        'Custom Libraries',
+        'gRPC Microservices',
+        'REST APIs',
+        'Data Pipelines',
+        'DevOps',
+        'Security',
+        'Chat Bots',
+        'Simulators',
+        'Automations',
+        'UI Wireframes',
+      ],
+      Products: [
+        'Databricks (Notebooks, Jobs, ML, SQL)',
+        'SageMaker',
+        'Atlan',
+        'Jira',
+        'Bitbucket',
+        'Redis Lab',
+        'MongoDB Atlas',
+        'Confluent Kafka',
+        'Sentry',
+        'Harness',
+        'Tableau',
+        'Keycloak',
+        'Slack Apps and Bots',
+        'Figma',
+      ],
+      'Cloud Platforms': [
+        'AWS (Almost All Core Services)',
+        'GCP (Compute, Dataproc, DB, IAM, OAuth, DiagFlow etc.)',
+      ],
+    },
     list: [
-      { name: 'Node JS', tag: 'programming', icon: '/images/skills/nodejs.png' },
-      { name: 'Angular JS ( 1 & 2 )', tag: 'programming', icon: '/images/skills/angularjs.png' },
-      { name: 'Core Java', tag: 'programming', icon: '/images/skills/java.png' },
-      { name: 'React JS', tag: 'programming', icon: '/images/skills/reactjs.png' },
-      { name: 'Redux', tag: 'programming', icon: '/images/skills/reactjs.png' },
-      { name: 'React-Native', tag: 'programming', icon: '/images/skills/reactjs.png' },
-      { name: 'Python', tag: 'programming', icon: '/images/skills/python.png' },
-      { name: 'jQuery', tag: 'programming', icon: '/images/skills/jquery.png' },
+      { name: 'Node JS', tag: 'programming', icon: iconPrefix + '/images/skills/nodejs.png' },
+      {
+        name: 'Angular JS ( 1 & 2 )',
+        tag: 'programming',
+        icon: iconPrefix + '/images/skills/angularjs.png',
+      },
+      { name: 'Core Java', tag: 'programming', icon: iconPrefix + '/images/skills/java.png' },
+      { name: 'React JS', tag: 'programming', icon: iconPrefix + '/images/skills/reactjs.png' },
+      { name: 'Redux', tag: 'programming', icon: iconPrefix + '/images/skills/reactjs.png' },
+      { name: 'React-Native', tag: 'programming', icon: iconPrefix + '/images/skills/reactjs.png' },
+      { name: 'Python', tag: 'programming', icon: iconPrefix + '/images/skills/python.png' },
+      { name: 'jQuery', tag: 'programming', icon: iconPrefix + '/images/skills/jquery.png' },
       // {
       //     name: 'Mobility (Native and Cross-Platform)',
       //     tag: 'programming',
-      //     icon: '/images/skills/mobile.png',
+      //     icon: iconPrefix +'/images/skills/mobile.png',
       // },
-      { name: 'JavaScript (ES6)', tag: 'programming', icon: '/images/skills/nodejs.png' },
-      { name: 'VBScript', tag: 'programming', icon: '/images/skills/vb.png' },
-      { name: 'Shell Scripting', tag: 'programming', icon: '/images/skills/shell.png' },
-      { name: 'SQL', tag: 'programming', icon: '/images/skills/sql.png' },
-      // { name: 'API / REST Services', tag: 'programming', icon: '/images/skills/api.png' },
-
-      { name: 'HTML5', tag: 'ui', icon: '/images/skills/html5.png' },
-      { name: 'CSS', tag: 'ui', icon: '/images/skills/css.png' },
-      { name: 'Bootstrap', tag: 'ui', icon: '/images/skills/bootstrap.png' },
-      { name: 'Angular', tag: 'ui', icon: '/images/skills/angularjs.png' },
-      { name: 'React', tag: 'ui', icon: '/images/skills/reactjs.png' },
-
-      { name: 'Express JS ', tag: 'server', icon: '/images/skills/nodejs.png' },
-      // { name: 'Apache Tomcat (J2EE)', tag: 'server', icon: '/images/skills/tomcat.png' },
-
-      { name: 'React-Native', tag: 'mobile', icon: '/images/skills/reactjs.png' },
-      { name: 'Cordova', tag: 'mobile', icon: '/images/skills/cordova.png' },
-      { name: 'Ionic', tag: 'mobile', icon: '/images/skills/ionic.png' },
-      { name: 'Android', tag: 'mobile', icon: '/images/skills/android.png' },
-
-      { name: 'Microsoft Azure', tag: 'cloud', icon: '/images/skills/azure.png' },
-      { name: 'Heroku', tag: 'cloud', icon: '/images/skills/heroku.png' },
-      { name: 'IBM Bluemix', tag: 'cloud', icon: '/images/skills/bluemix.jpg' },
-      { name: 'Google FireBase', tag: 'cloud', icon: '/images/skills/firebase2.png' },
-      { name: 'AWS', tag: 'cloud', icon: '/images/skills/aws.png' },
-
-      { name: 'MongoDB', tag: 'database', icon: '/images/skills/mongodb.png' },
-      { name: 'PostgreSQL', tag: 'database', icon: '/images/skills/postgresql.png' },
-      // { name: 'Microsoft SQL Server', tag: 'database', icon: '/images/skills/mssql.png' },
-
-      { name: 'Windows', tag: 'os', icon: '/images/skills/windows.png' },
-      { name: 'Linux/Unix', tag: 'os', icon: '/images/skills/linux.png' },
-      { name: 'HP-UX', tag: 'os', icon: '/images/skills/linux.png' },
-
-      { name: 'Atlassian JIRA', tag: 'tool', icon: '/images/skills/jira.png' },
-      // { name: 'Visual Studio Team Services', tag: 'tool', icon: '/images/skills/vsts.png' },
-      { name: 'SVN', tag: 'tool', icon: '/images/skills/svn.png' },
-      { name: 'Git', tag: 'tool', icon: '/images/skills/git.png' },
-      { name: 'Bitbucket', tag: 'tool', icon: '/images/skills/bitbucket.ico' },
-      { name: 'Azure Portal', tag: 'tool', icon: '/images/skills/azure.png' },
-      { name: 'Directus CMS', tag: 'tool', icon: '/images/skills/cms.png' },
-
-      { name: 'Eclipse', tag: 'application', icon: '/images/skills/eclipse2.png' },
-      { name: 'Visual Studio', tag: 'application', icon: '/images/skills/visualstudio.png' },
-      { name: 'Visual Studio Code', tag: 'application', icon: '/images/skills/visualstudio.png' },
-      { name: 'Android Studio', tag: 'application', icon: '/images/skills/android.png' },
-      { name: 'IntelliJ WebStrom', tag: 'application', icon: '/images/skills/intellij.png' },
-    ],
-  },
-  testimonials: {
-    title: 'Testimonials',
-    description:
-      'I have worked with some great people and teams. Here are some of the things they have said about me.',
-    list: [
       {
-        name: 'Aashay Sachdeva',
-        designation: 'Associate - Investments @Rebright Partners',
-        company: 'Rebright Partners',
-        description: `I had the privilege to work with Sivaraj at MPL on large-scale projects involving fraud detection and matchmaking systems. His ability to design scalable, resilient solutions in high-pressure environments was nothing short of exceptional. With his deep knowledge of system design, Sivaraj consistently improved our systems' performance, exceeding team expectations.
-            Aside from his technical prowess, Sivaraj's positive attitude and strong communication skills make him a genuine team player. I have no doubt he'd be a great asset to any team requiring an exceptional machine learning engineer.`,
-        avatar:
-          'https://media.licdn.com/dms/image/C5603AQFNKGeJrmqUAA/profile-displayphoto-shrink_100_100/0/1601290096203?e=1697068800&v=beta&t=6e9a3zNyk39l3GGYjqO1hoCj3Lc_SVa4yeyViP7mC7g',
+        name: 'JavaScript (ES6)',
+        tag: 'programming',
+        icon: iconPrefix + '/images/skills/nodejs.png',
+      },
+      { name: 'VBScript', tag: 'programming', icon: iconPrefix + '/images/skills/vb.png' },
+      {
+        name: 'Shell Scripting',
+        tag: 'programming',
+        icon: iconPrefix + '/images/skills/shell.png',
+      },
+      { name: 'SQL', tag: 'programming', icon: iconPrefix + '/images/skills/sql.png' },
+      // { name: 'API / REST Services', tag: 'programming', icon: iconPrefix +'/images/skills/api.png' },
+
+      { name: 'HTML5', tag: 'ui', icon: iconPrefix + '/images/skills/html5.png' },
+      { name: 'CSS', tag: 'ui', icon: iconPrefix + '/images/skills/css.png' },
+      { name: 'Bootstrap', tag: 'ui', icon: iconPrefix + '/images/skills/bootstrap.png' },
+      { name: 'Angular', tag: 'ui', icon: iconPrefix + '/images/skills/angularjs.png' },
+      { name: 'React', tag: 'ui', icon: iconPrefix + '/images/skills/reactjs.png' },
+
+      { name: 'Express JS ', tag: 'server', icon: iconPrefix + '/images/skills/nodejs.png' },
+      // { name: 'Apache Tomcat (J2EE)', tag: 'server', icon: iconPrefix +'/images/skills/tomcat.png' },
+
+      { name: 'React-Native', tag: 'mobile', icon: iconPrefix + '/images/skills/reactjs.png' },
+      { name: 'Cordova', tag: 'mobile', icon: iconPrefix + '/images/skills/cordova.png' },
+      { name: 'Ionic', tag: 'mobile', icon: iconPrefix + '/images/skills/ionic.png' },
+      { name: 'Android', tag: 'mobile', icon: iconPrefix + '/images/skills/android.png' },
+
+      { name: 'Microsoft Azure', tag: 'cloud', icon: iconPrefix + '/images/skills/azure.png' },
+      { name: 'Heroku', tag: 'cloud', icon: iconPrefix + '/images/skills/heroku.png' },
+      { name: 'IBM Bluemix', tag: 'cloud', icon: iconPrefix + '/images/skills/bluemix.jpg' },
+      { name: 'Google FireBase', tag: 'cloud', icon: iconPrefix + '/images/skills/firebase2.png' },
+      { name: 'AWS', tag: 'cloud', icon: iconPrefix + '/images/skills/aws.png' },
+
+      { name: 'MongoDB', tag: 'database', icon: iconPrefix + '/images/skills/mongodb.png' },
+      { name: 'PostgreSQL', tag: 'database', icon: iconPrefix + '/images/skills/postgresql.png' },
+      // { name: 'Microsoft SQL Server', tag: 'database', icon: iconPrefix +'/images/skills/mssql.png' },
+
+      { name: 'Windows', tag: 'os', icon: iconPrefix + '/images/skills/windows.png' },
+      { name: 'Linux/Unix', tag: 'os', icon: iconPrefix + '/images/skills/linux.png' },
+      { name: 'HP-UX', tag: 'os', icon: iconPrefix + '/images/skills/linux.png' },
+
+      { name: 'Atlassian JIRA', tag: 'tool', icon: iconPrefix + '/images/skills/jira.png' },
+      // { name: 'Visual Studio Team Services', tag: 'tool', icon: iconPrefix +'/images/skills/vsts.png' },
+      { name: 'SVN', tag: 'tool', icon: iconPrefix + '/images/skills/svn.png' },
+      { name: 'Git', tag: 'tool', icon: iconPrefix + '/images/skills/git.png' },
+      { name: 'Bitbucket', tag: 'tool', icon: iconPrefix + '/images/skills/bitbucket.ico' },
+      { name: 'Azure Portal', tag: 'tool', icon: iconPrefix + '/images/skills/azure.png' },
+      { name: 'Directus CMS', tag: 'tool', icon: iconPrefix + '/images/skills/cms.png' },
+
+      { name: 'Eclipse', tag: 'application', icon: iconPrefix + '/images/skills/eclipse2.png' },
+      {
+        name: 'Visual Studio',
+        tag: 'application',
+        icon: iconPrefix + '/images/skills/visualstudio.png',
       },
       {
-        name: 'Atul Aphale',
-        designation: 'Head of Engineering, India',
-        company: 'Sisu',
-        description:
-          'I had the pleasure of working with Sivaraj since the early days of MPL. He has been an extremely versatile and well rounded software developer, as could be witnessed from his growth from a rising frontend engineer to a dedicated data enthusiast !! Over a period of time, he has mastered different tech stacks based on the engineering needs (ReactJS, NodeJS, Python, Java,..) along with Devops skillset. As a consequence, he has been a great asset for the Data Engineering (DE) team that requires this knowledge of cross-disciplinary stuff. I have loved his contributions in building the Data Products, containerising the Java applications and solidifying the DataOps practices within DE. Additionally, he has built lot of useful utilities (ZooKeeper Configs, Fraud Dashboard,...) for engineering (outside his work responsibilities) that has boosted the developer productivity tremendously. He is a true all-rounder and his positive attitude towards work fuels his performance further. I hope our paths cross again in future and wish him loads of luck for all his future endeavours !!',
-        avatar:
-          'https://media.licdn.com/dms/image/D4E03AQHJ2-VFsljP6A/profile-displayphoto-shrink_100_100/0/1641870130628?e=1697068800&v=beta&t=W1-kEEIGRGO3MnRIYW4xt4TBrz_NFtzo-2hsVshHYI0',
+        name: 'Visual Studio Code',
+        tag: 'application',
+        icon: iconPrefix + '/images/skills/visualstudio.png',
+      },
+      {
+        name: 'Android Studio',
+        tag: 'application',
+        icon: iconPrefix + '/images/skills/android.png',
+      },
+      {
+        name: 'IntelliJ WebStrom',
+        tag: 'application',
+        icon: iconPrefix + '/images/skills/intellij.png',
       },
     ],
   },
+  testimonials: testimonials,
 };
 
-export { SECTIONS };
+export { SECTIONS, iconPrefix };

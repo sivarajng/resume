@@ -1,24 +1,24 @@
 import {
-  createStyles,
-  Title,
-  Text,
-  Button,
-  Container,
-  rem,
-  Avatar,
-  Center,
-  Group,
-  Image,
   Anchor,
+  Avatar,
+  Button,
+  Center,
+  Container,
+  Group,
+  Text,
+  Title,
+  createStyles,
+  rem,
 } from '@mantine/core';
+import { IconDownload, IconMail } from '@tabler/icons-react';
 import Dots from '../../components/Dots';
-import { IconInbox, IconMail } from '@tabler/icons-react';
+import { iconPrefix } from '../../config/config';
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
     position: 'relative',
     paddingTop: rem(120),
-    paddingBottom: rem(80),
+    paddingBottom: rem(24),
 
     [theme.fn.smallerThan('sm')]: {
       paddingTop: rem(80),
@@ -104,7 +104,7 @@ const Hero = () => {
   const { classes } = useStyles();
 
   return (
-    <Container className={classes.wrapper} size={1400}>
+    <Container className={classes.wrapper}>
       <Dots className={classes.dots} style={{ left: 0, top: 0 }} />
       <Dots className={classes.dots} style={{ left: 60, top: 0 }} />
       <Dots className={classes.dots} style={{ left: 0, top: 140 }} />
@@ -112,7 +112,7 @@ const Hero = () => {
 
       <div className={classes.inner}>
         <Center my="md">
-          <Avatar size={144} radius="lg" src={'/static/avatar.png'} />
+          <Avatar size={144} radius="lg" src={iconPrefix + '/static/avatar.png'} />
         </Center>
         <Title className={classes.title}>
           Hello, I'm{' '}
@@ -134,12 +134,25 @@ const Hero = () => {
                 </Anchor>
               </Group>
               <Group align="center" style={{ gap: '0.3rem' }}>
-                <Avatar size="xs" radius={0} src={'/images/linkedin.png'} />
+                <Avatar size="xs" radius={0} src={iconPrefix + '/images/linkedin.png'} />
                 <Anchor href="https://www.linkedin.com/in/sivaraj-nagaraj" target="_blank">
                   https://www.linkedin.com/in/sivaraj-nagaraj
                 </Anchor>
               </Group>
             </Group>
+          </Center>
+          <Center p={0}>
+            <Button
+              download
+              component="a"
+              href="/resume/static/Resume_Sivaraj Nagaraj_Multi-Stack Developer_10YrExp.pdf"
+              size="xs"
+              leftIcon={<IconDownload size={12} />}
+              compact
+              variant="light"
+            >
+              Resume
+            </Button>
           </Center>
         </Container>
       </div>

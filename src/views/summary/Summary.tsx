@@ -1,7 +1,7 @@
-import { Container, List, Title, useMantineTheme } from '@mantine/core';
+import { List, Text, Title, useMantineTheme } from '@mantine/core';
+import { IconCircleFilled } from '@tabler/icons-react';
 import { SECTIONS } from '../../config/config';
 import { commomStyles } from '../../styles/commmon';
-import { IconCircle, IconCircleFilled } from '@tabler/icons-react';
 
 const Summary = () => {
   const summary = SECTIONS.summary;
@@ -13,14 +13,14 @@ const Summary = () => {
       <Title order={2} className={classes.title}>
         {summary.title}
       </Title>
-      <List>
+      <List spacing={'lg'}>
         {summary.list.map((item, index) => {
           return (
             <List.Item
               icon={<IconCircleFilled size="0.5rem" style={{ color: theme.colors.teal[5] }} />}
               key={index + ''}
             >
-              {item}
+              <Text dangerouslySetInnerHTML={{ __html: item }} />
             </List.Item>
           );
         })}

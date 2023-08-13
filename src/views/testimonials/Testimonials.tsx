@@ -1,22 +1,20 @@
-import { useRef } from 'react';
+import { Carousel } from '@mantine/carousel';
 import {
   Avatar,
-  Blockquote,
-  Container,
+  Button,
   Group,
-  List,
   Paper,
   Spoiler,
-  Stack,
   Text,
   Title,
   rem,
   useMantineTheme,
 } from '@mantine/core';
+import { IconChevronLeft, IconChevronRight } from '@tabler/icons-react';
+import Autoplay from 'embla-carousel-autoplay';
+import { useRef } from 'react';
 import { SECTIONS } from '../../config/config';
 import { commomStyles } from '../../styles/commmon';
-import { Carousel } from '@mantine/carousel';
-import Autoplay from 'embla-carousel-autoplay';
 const Testimonials = () => {
   const testimonials = SECTIONS.testimonials;
   const { classes, cx } = commomStyles();
@@ -28,9 +26,9 @@ const Testimonials = () => {
         {testimonials.title}
       </Title>
 
-      <Text size="md" className={classes.description}>
+      {/* <Text size="md" className={classes.description}>
         {testimonials.description}
-      </Text>
+      </Text> */}
 
       <Carousel
         withIndicators
@@ -39,8 +37,8 @@ const Testimonials = () => {
         slideGap="md"
         loop
         align="center"
-        slidesToScroll={2}
-        mb={20}
+        slidesToScroll={1}
+        pb={32}
         plugins={[autoplay.current]}
         onMouseEnter={autoplay.current.stop}
         onMouseLeave={autoplay.current.reset}
@@ -69,8 +67,30 @@ const Testimonials = () => {
                     </div>
                   </Group>
                   <Group>
-                    <Spoiler maxHeight={200} showLabel="Show more" hideLabel="Hide">
-                      <Text>{item.description}</Text>
+                    <Spoiler
+                      maxHeight={200}
+                      showLabel={
+                        <Button
+                          compact
+                          variant="subtle"
+                          size="xs"
+                          rightIcon={<IconChevronRight size={12} />}
+                        >
+                          Show more
+                        </Button>
+                      }
+                      hideLabel={
+                        <Button
+                          compact
+                          variant="subtle"
+                          size="xs"
+                          leftIcon={<IconChevronLeft size={12} />}
+                        >
+                          Hide
+                        </Button>
+                      }
+                    >
+                      <Text style={{ whiteSpace: 'pre-line' }}>{item.description}</Text>
                     </Spoiler>
                   </Group>
                 </Group>
