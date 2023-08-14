@@ -36,6 +36,14 @@ const testimonials = {
         'https://media.licdn.com/dms/image/D5603AQGqWpoFB0gZAA/profile-displayphoto-shrink_100_100/0/1665230060736?e=1697673600&v=beta&t=jgPjcCugKAf3Dzw7LkWoUTejuX4ardHH7eiif6n-mQ0',
     },
     {
+      name: 'Priti Lohar',
+      designation: 'Staff SDET I at Mobile Premier League (MPL)',
+      description:
+        'Sivaraj is an all rounder, and a complete tech-pro. He is definitely a very good team player, and can handle multiple responsibilities at the same time. A Versatile Engineer!!!',
+      avatar:
+        'https://media.licdn.com/dms/image/C4E03AQGN31ZJSLeL9Q/profile-displayphoto-shrink_100_100/0/1607316516210?e=1697673600&v=beta&t=_0luSi_PX9_Lyw8msx8-8PLnG9XQh1UNIi5ulfN59Cs',
+    },
+    {
       name: 'Ashwani Arya',
       designation: 'Frontend Developer/Engineer - ReactJS, JavaScript, NodeJS',
       description:

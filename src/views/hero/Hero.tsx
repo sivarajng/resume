@@ -1,6 +1,7 @@
 import {
   Anchor,
   Avatar,
+  Badge,
   Button,
   Center,
   Container,
@@ -10,7 +11,7 @@ import {
   createStyles,
   rem,
 } from '@mantine/core';
-import { IconDownload, IconMail } from '@tabler/icons-react';
+import { IconDownload, IconMail, IconStarFilled } from '@tabler/icons-react';
 import Dots from '../../components/Dots';
 import { iconPrefix } from '../../config/config';
 
@@ -142,17 +143,29 @@ const Hero = () => {
             </Group>
           </Center>
           <Center p={0}>
-            <Button
-              download
-              component="a"
-              href="/resume/static/Resume_Sivaraj Nagaraj_Multi-Stack Developer_10YrExp.pdf"
-              size="xs"
-              leftIcon={<IconDownload size={12} />}
-              compact
-              variant="light"
-            >
-              Resume
-            </Button>
+            <Group>
+              <Badge
+                color="yellow.7"
+                variant="light"
+                styles={{ inner: { textTransform: 'none' } }}
+                leftSection={<IconStarFilled size={11} style={{ marginTop: 6 }} />}
+              >
+                <Text size="sm" fw={500} color="yellow.7">
+                  Open for Remote Opportunities
+                </Text>
+              </Badge>
+              <Button
+                download
+                component="a"
+                href="/resume/static/Resume_Sivaraj Nagaraj_Multi-Stack Developer_10YrExp.pdf"
+                size="xs"
+                leftIcon={<IconDownload size={12} />}
+                compact
+                variant="light"
+              >
+                Resume
+              </Button>
+            </Group>
           </Center>
         </Container>
       </div>
