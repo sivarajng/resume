@@ -51,6 +51,7 @@ const Skill = () => {
         <Text size="sm" weight={500} color="dimmed">
           {skills.tabs[key].map((t: string, idx: number) => (
             <Badge
+              size='lg'
               color={getRandomColor(materialColors)}
               variant="light"
               m={4}
