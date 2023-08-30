@@ -16,6 +16,8 @@ const Main = () => {
       <Container>
         <Hero />
         <Summary />
+      </Container>
+      <Container size={'lg'}>
         <Divider p={12} mt={24} />
         <Skill />
         <Divider p={12} mt={24} />
@@ -25,7 +27,7 @@ const Main = () => {
       <Container size={'lg'}>
         <Project />
       </Container>
-      <Container>
+      <Container size={'lg'}>
         <Divider p={12} mt={24} />
         <Academy />
         <Divider p={12} mt={24} />
@@ -35,7 +37,7 @@ const Main = () => {
         <Space h={120} />
       </Container>
 
-      {/* <WhatsappShareButton title='Sivaraj Nagaraj_Multi-Stack Developer_10YrExp' separator='' /> */}
+      {/* <WhatsappShareButton title='Sivaraj Nagaraj_Full-Stack Developer_10YrExp' separator='' /> */}
 
       <Affix position={{ bottom: rem(20), right: rem(20) }}>
         <Transition transition="slide-up" mounted={scroll.y > 320}>

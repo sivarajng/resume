@@ -31,7 +31,7 @@ const commomStyles = createStyles((theme) => ({
 
   title: {
     fontWeight: 600,
-    marginBottom: theme.spacing.md,
+    marginBottom: theme.spacing.xs,
     color: theme.colorScheme === 'dark' ? theme.white : theme.colors.blue[5],
     textAlign: 'center',
     [theme.fn.smallerThan('sm')]: {
@@ -42,6 +42,7 @@ const commomStyles = createStyles((theme) => ({
 
   description: {
     textAlign: 'center',
+    marginBottom: theme.spacing.md,
     [theme.fn.smallerThan('sm')]: {
       textAlign: 'left',
     },

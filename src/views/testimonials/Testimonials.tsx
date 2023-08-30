@@ -1,7 +1,9 @@
 import { Carousel } from '@mantine/carousel';
 import {
   Avatar,
+  Blockquote,
   Button,
+  Center,
   Group,
   Paper,
   Spoiler,
@@ -22,13 +24,16 @@ const Testimonials = () => {
   const autoplay = useRef(Autoplay({ delay: 2000 }));
   return (
     <>
-      <Title order={2} className={classes.title}>
-        {testimonials.title}
-      </Title>
-
-      {/* <Text size="md" className={classes.description}>
-        {testimonials.description}
-      </Text> */}
+      <Center>
+        <Title order={2} className={classes.title}>
+          {testimonials.title}
+        </Title>
+      </Center>
+      <Center>
+        <Text size="md" className={classes.description} maw={'60%'}>
+          {testimonials.description}
+        </Text>
+      </Center>
 
       <Carousel
         withIndicators
@@ -60,10 +65,14 @@ const Testimonials = () => {
               <Paper withBorder p={8}>
                 <Group>
                   <Group p={0}>
-                    <Avatar size="lg" radius={50} src={item.avatar} />
+                    <Avatar size="md" radius={50} src={item.avatar} />
                     <div>
-                      <Text fw={600}>{item.name}</Text>
-                      <Text color="dimmed">{item.designation}</Text>
+                      <Text size={'md'} fw={600}>
+                        {item.name}
+                      </Text>
+                      <Text size={'md'} color="dimmed">
+                        {item.designation}
+                      </Text>
                     </div>
                   </Group>
                   <Group>
@@ -90,7 +99,17 @@ const Testimonials = () => {
                         </Button>
                       }
                     >
-                      <Text style={{ whiteSpace: 'pre-line' }}>{item.description}</Text>
+                      <Blockquote
+                        style={{ whiteSpace: 'pre-line' }}
+                        styles={{
+                          root: { paddingTop: 0 },
+                          body: { fontSize: '1rem' },
+                        }}
+                      >
+                        {item.description}
+                      </Blockquote>
+
+                      {/* <Text style={{ whiteSpace: 'pre-line' }}>{item.description}</Text> */}
                     </Spoiler>
                   </Group>
                 </Group>

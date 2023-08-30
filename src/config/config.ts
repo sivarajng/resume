@@ -25,22 +25,22 @@ const SECTIONS = {
   ],
   hero: {
     title: 'Sivaraj Nagaraj',
-    subtitle: 'Data Engineer & Multi-Stack Engineer',
+    description: 'Full-Stack Engineer | Data Engineer | Architect',
   },
   summary: {
     title: 'Summary',
-    description:
-      'I am a Data Engineer and Multi-Stack Engineer who actively worked in multiple streams of tech like Python, Java, Javascript, Backend, Frontend, DevOps, MLOps, Chat Bots, Mobile App, Cloud to name a few and worked with many cross teams like Data Science, Product, Revenue, Infra.',
+    description: '',
     list: [
-      `<b style='font-weight:500;' >Had helped Organizations to achieve business outcomes with my 10 years of expertise</b> in the software
-      technology industry, specifically in modern Data Stacks and Frameworks.`,
-      `<b style='font-weight:500;' >Had built Products and Features from scratch in Startups, worked in High Scale Distributed Systems and
-      Voluminous Event Streams</b> with low latency and optimized services as a core part.`,
-      `<b style='font-weight:500;' >An unique and innovative Data Engineer and Multi-Stack Developer</b> who actively working in multiple streams
-      of tech like <b style='font-weight:500;' >Python, Java, JavaScript, Backend, Frontend, DevOps, MLOps, Chat Bots, Mobile App, Cloud</b> to
-      name a few and working with many cross teams like Data Science, Product, Revenue, Infra.`,
-      `<b style='font-weight:500;' >As a Business Aligned Developer</b>, my day-to-day work includes <b style='font-weight:500;' >contributing to Org’s OKR Plans, Architecting,
-      Building Solutions, Product Features, Automations, Optimizations</b> to get the desired business results.`,
+      `<b style="font-weight:500;">A Versatile, Full-Stack as well as Data Engineer</b>, helping organizations to achieve business outcomes with my 10
+      years of expertise in software engineering, specifically in modern data stacks and frameworks.`,
+      `<b style="font-weight:500;">Proficient in problem solving using an array of tech stacks and streams</b> like <b style="font-weight:500;">TypeScript, Python, Java, Backend
+      (Micro Services, APIs, gRPC), Frontend (React), DevOps, MLOps, Chat Bots, Mobile App, Cloud (AWS, GCP)</b>.`,
+      `<b style="font-weight:500;">Worked in Startup 0-100 and built Products and Features from scratch</b>, which includes large-scale distributed
+      systems, services and event streams with low latency and performance as the default`,
+      `<b style="font-weight:500;">A Business centric Engineer, owned multiple Business Metrics, OKRs</b> and worked with many cross-functional
+      teams like Data Science, Product, Revenue, Infra, Design and Engineering to get the desired business results.`,
+      `<b style="font-weight:500;">My core role includes contributing to Org’s OKR Plans, Architecting, Building Solutions</b>, Product Features,
+      Automations, Optimizations and Improve Metrics to achieve the business goals and outcomes.`,
     ],
   },
   experiences: {
@@ -55,6 +55,7 @@ const SECTIONS = {
         to: 'Present',
         icon: iconPrefix + '/static/mpl.jpg',
         tech: [
+          'Full Stack Developer',
           'Data Engineer',
           'ML Engineer',
           'Mobile App Developer',
@@ -63,10 +64,10 @@ const SECTIONS = {
           'TypeScript',
         ],
         summary: [
-          'As a Data Engineer working on various Data pipelines like Segmentation, Ingestion etc. and Event Driven Systems. Developed high scale backend services and UI dashboards. key architect of MPL Frontend App.',
-          'Works closely with the Data Science team and builds solutions which bring business impacts.',
-          'Build variuos backend micro services like Dynamic Price Forecasting Service, Home Page & Tournaments Personalization Service, Multi-Player Score Calculation Service, Kafka Event Driven User Tasks Service, Data Relay Service, User Segmentation Service etc.',
-          'Build varoius core frontend modules like Login, Home Page, Wallet, Profile, Refer & Earn, Help Center, Notifications, User Tasks, Payments of the MPL App',
+          `As a Full-Stack and Data Engineer working on various backend systems and Data pipelines like Kafka Event Driven Systems, Ingestion, Segmentation, etc. Developed large-scale backend microservices and Frontend dashboards.`,
+          `Key architect of the MPL Frontend App, built from ground up including core flow like Login, Payments, Wallet, etc.`,
+          `Works closely with the Data Science and cross-functional teams and builds solutions which bring business impacts.`,
+          `Independently solved business and tech problem statements by developing and productionising in-house solutions like Config Management, Fraud Ops, Data Dashboards, Alert-as-a-Service, Chatbots Automations etc.`,
         ],
         achievement: [
           'Archited the MPL Frontend App from Scratch.',
@@ -752,7 +753,7 @@ const SECTIONS = {
       'I have worked on a wide range of technologies and tools. I have listed the ones I have worked on extensively.',
 
     tabs: {
-      Programming: ['Python', 'Java', 'JavaScript / TypeScript', 'Basic SQL'],
+      Programming: ['Python', 'JavaScript / TypeScript', 'Java', 'SQL'],
       'Frameworks, Applications, Libraries and Tools': [
         'Flask',
         'FastAPI',

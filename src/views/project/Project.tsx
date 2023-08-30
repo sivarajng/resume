@@ -51,7 +51,7 @@ const Feature = ({
           {client}
         </Text> */}
 
-        <Group position="apart">
+        <Group position="apart" mt={'xs'}>
           <Text size="sm" weight={500} color="dimmed">
             {coreApplications.map((t: string, idx: number) => (
               <Badge
@@ -59,10 +59,9 @@ const Feature = ({
                 color={'purple.6'}
                 variant="light"
                 mr={4}
+                mb={4}
                 styles={{
-                  inner: {
-                    textTransform: 'none',
-                  },
+                  inner: { textTransform: 'none' },
                 }}
               >
                 {t}

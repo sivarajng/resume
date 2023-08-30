@@ -13,7 +13,7 @@ import {
 } from '@mantine/core';
 import { IconDownload, IconMail, IconStarFilled } from '@tabler/icons-react';
 import Dots from '../../components/Dots';
-import { iconPrefix } from '../../config/config';
+import { SECTIONS, iconPrefix } from '../../config/config';
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
@@ -103,6 +103,7 @@ const useStyles = createStyles((theme) => ({
 
 const Hero = () => {
   const { classes } = useStyles();
+  const hero = SECTIONS.hero;
 
   return (
     <Container className={classes.wrapper}>
@@ -118,13 +119,13 @@ const Hero = () => {
         <Title className={classes.title}>
           Hello, I'm{' '}
           <Text component="span" className={classes.highlight} inherit>
-            <b>Sivaraj Nagaraj</b>
+            <b>{hero.title}</b>
           </Text>{' '}
         </Title>
 
         <Container p={0} size={600}>
           <Text size="xl" fw={700} className={classes.description} color="teal">
-            Multi-Stack Developer | Data Engineer | Architect
+            {hero.description}
           </Text>
           <Center p={12}>
             <Group>
@@ -145,19 +146,20 @@ const Hero = () => {
           <Center p={0}>
             <Group>
               <Badge
-                color="yellow.7"
+                color="yellow.9"
                 variant="light"
                 styles={{ inner: { textTransform: 'none' } }}
-                leftSection={<IconStarFilled size={11} style={{ marginTop: 6 }} />}
+                p={'sm'}
+                leftSection={<IconStarFilled size={12} style={{ marginTop: 8 }} />}
               >
-                <Text size="sm" fw={500} color="yellow.7">
-                  Open for Remote Opportunities
+                <Text size="md" fw={500} color="yellow.9">
+                  Can join in 30 days
                 </Text>
               </Badge>
               <Button
                 download
                 component="a"
-                href="/resume/static/Resume_Sivaraj Nagaraj_Multi-Stack Developer_10YrExp.pdf"
+                href="/resume/static/Resume_Sivaraj-Nagaraj_Data_Full-Stack_Engineer_10YrExp.pdf"
                 size="xs"
                 leftIcon={<IconDownload size={12} />}
                 compact

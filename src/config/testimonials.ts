@@ -1,7 +1,6 @@
 const testimonials = {
   title: 'Testimonials',
-  description:
-    'I have worked with some great people and teams. Here are some of the things they have said about me.',
+  description: `I know you might still find it hard to trust me. So, here is what some of the Best Engineers, Managers & Leaders have to say about me.`,
   list: [
     {
       name: 'Aashay Sachdeva',
@@ -18,6 +17,40 @@ const testimonials = {
         'I had the pleasure of working with Sivaraj since the early days of MPL. He has been an extremely versatile and well rounded software developer, as could be witnessed from his growth from a rising frontend engineer to a dedicated data enthusiast !! Over a period of time, he has mastered different tech stacks based on the engineering needs (ReactJS, NodeJS, Python, Java,..) along with Devops skillset. As a consequence, he has been a great asset for the Data Engineering (DE) team that requires this knowledge of cross-disciplinary stuff. I have loved his contributions in building the Data Products, containerising the Java applications and solidifying the DataOps practices within DE. Additionally, he has built lot of useful utilities (ZooKeeper Configs, Fraud Dashboard,...) for engineering (outside his work responsibilities) that has boosted the developer productivity tremendously. He is a true all-rounder and his positive attitude towards work fuels his performance further. I hope our paths cross again in future and wish him loads of luck for all his future endeavours !!',
       avatar:
         'https://media.licdn.com/dms/image/D4E03AQHJ2-VFsljP6A/profile-displayphoto-shrink_100_100/0/1641870130628?e=1697068800&v=beta&t=W1-kEEIGRGO3MnRIYW4xt4TBrz_NFtzo-2hsVshHYI0',
+    },
+    {
+      name: 'Aakansh Gupta',
+      designation: 'Data Science at MPL | ex-Goldman Sachs',
+      description: `Sivaraj was my goto person for building quick prototypes for Data products/ideas we wanted to test out at MPL. Not just quick (which reflects his deep technical skills) and willing to go the extra mile, he was also very diligent in understanding the business use-cases of each solution he built and KPIs around its succcess.
+        I'm sure he would be a great addition to any engineering team given the breadth and depth of skills he possesses along with the business acumen.`,
+      avatar:
+        'https://media.licdn.com/dms/image/C5603AQGrQI6bKxIjiw/profile-displayphoto-shrink_100_100/0/1617126313279?e=1697673600&v=beta&t=GDLpl_zOKLyMspheWwhE2QR8HKbk4-HCs6H1WMz20fw',
+    },
+    {
+      name: 'Ajinkya Gosavi',
+      designation: 'SDET at MPL',
+      description: `I had the privilege of working closely with Sivaraj Nagaraj during our time together at MPL as coworkers. Sivaraj's exceptional qualities as a Senior Software Developer in Data Engineering left a lasting impression on me.
+
+Sivaraj is truly a go-getter who is always ready to take on new challenges. His special attention to automation of tasks and meticulous monitoring and alerting processes demonstrate his commitment to efficiency and excellence. His confidence in tackling complex projects is truly inspiring.
+
+One notable accomplishment that stands out is Sivaraj's creation of the "Alert As a Service" pet project. This innovative initiative not only tagged specific stakeholders whenever an alert was raised but also provided comprehensive context and SOPs for rapid issue resolution. Thanks to his ingenious solution, our team experienced a remarkable reduction in Alert Fatigue, enabling us to focus on critical alerts and significantly boosting overall productivity. 
+
+Sivaraj's willingness to embrace new opportunities for learning is truly commendable. I distinctly recall how he took ownership of a business-critical trigger service when no one else was willing to step up. Within an astonishingly short span of just two days, he mastered the Camel framework and implemented an entirely new flow. His ability to swiftly adapt and apply new skills to real-world challenges is a testament to his resourcefulness and dedication.
+
+In a nutshell, Sivaraj Nagaraj is the epitome of a problem solver. His proactive approach, innovative thinking, and unwavering commitment make him an invaluable asset to any team. It was a pleasure working alongside Sivaraj, and I have no doubt that he will continue to excel and make a positive impact wherever he goes.`,
+      avatar:
+        'https://media.licdn.com/dms/image/C4D03AQGlwSFxqRcaVA/profile-displayphoto-shrink_100_100/0/1516557648556?e=1697673600&v=beta&t=g1q4eyW9p7ygV1yai2TCntAWCXUuKORcDByK6QKKt7s',
+    },
+    {
+      name: 'Vinod Gattani',
+      designation: 'Data Science',
+      description: `I had the pleasure to work with Sivaraj at MPL on multiple Data projects. He is one of the most reliable ones - always before deadlines and diligently tested solutions. He would give detailed feedback on spec requirements that has helped the team in deploying the right solution.
+
+He has always gone the extra mile to add flexibility to the solution and create UI for the end user.
+        
+He will be an asset to any engineering team with his great work ethic.`,
+      avatar:
+        'https://media.licdn.com/dms/image/D5635AQHZmSUpzIzIpg/profile-framedphoto-shrink_100_100/0/1690520630820?e=1693227600&v=beta&t=8lxC4mmcSzA4X-iwx6c2YCtKMqGbRcI19Zpplf5UyNY',
     },
     {
       name: 'Asifa Sunar',
@@ -49,7 +82,7 @@ const testimonials = {
       description:
         'I worked with Sivaraj on multiple projects. His zeal on problem solving is amazing. Apart from being techie, he is also a very good leader and always willing to help their team.',
       avatar:
-        'https://media.licdn.com/dms/image/D5635AQHJaXiZ-FNr4g/profile-framedphoto-shrink_100_100/0/1686963540820?e=1692522000&v=beta&t=L4E-ndotBhXmjXeujvuIFFp0-Py0ezQ2YWfGQO7OwcY',
+        'https://media.licdn.com/dms/image/D5635AQHJaXiZ-FNr4g/profile-framedphoto-shrink_100_100/0/1686963540820?e=1693227600&v=beta&t=xgK9A8djyI4r0VRthI6miVgxe0eI2JC9RY5sCDPH9TM',
     },
     {
       name: 'Gurmanjot Singh Randhawa',
