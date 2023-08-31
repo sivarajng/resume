@@ -769,6 +769,7 @@ const SECTIONS = {
         'React Native',
         'Shell',
         'Express.JS',
+        'GraphQL',
         'Jupyter Notebooks',
         'SQLAlchemy',
         'PostgreSQL',
