@@ -39,10 +39,11 @@ const Main = () => {
 
       {/* <WhatsappShareButton title='Sivaraj Nagaraj_Full-Stack Developer_10YrExp' separator='' /> */}
 
-      <Affix position={{ bottom: rem(20), right: rem(20) }}>
+      <Affix position={{ bottom: rem(20), left: rem(20) }}>
         <Transition transition="slide-up" mounted={scroll.y > 320}>
           {(transitionStyles) => (
             <ActionIcon
+              size={'lg'}
               color="blue"
               variant="filled"
               style={transitionStyles}

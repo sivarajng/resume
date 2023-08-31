@@ -160,7 +160,7 @@ const Hero = () => {
                 download
                 component="a"
                 href="/resume/static/Resume_Sivaraj-Nagaraj_Data_Full-Stack_Engineer_10YrExp.pdf"
-                size="xs"
+                size="sm"
                 leftIcon={<IconDownload size={12} />}
                 compact
                 variant="light"

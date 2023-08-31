@@ -1,73 +1,57 @@
-import { Avatar, Badge, Card, Group, Table, Text, Title } from '@mantine/core';
-import { SECTIONS } from '../../config/config';
+import { Avatar, Badge, Card, Group, SimpleGrid, Table, Text, Title } from '@mantine/core';
+import { SECTIONS, iconPrefix } from '../../config/config';
 import { commomStyles } from '../../styles/commmon';
 
-// Example usage:
-const materialColors = [
-  'blue',
-  // 'orange',
-  // 'pink',
-  // 'purple',
-  // 'deep purple',
-  // 'indigo',
-  // 'blue',
-  // 'light blue',
-  // 'cyan',
-  // 'teal',
-  // 'green',
-  // 'light green',
-  // 'lime'
-];
-
-function getRandomColor(colors: string[]): string {
-  const randomIndex = Math.floor(Math.random() * colors.length);
-  return colors[randomIndex];
-}
-
-const Feature = ({ id, name, tag, icon }: any) => {
-  const { classes } = commomStyles();
+const Feature = ({ name, skills }: any) => {
+  const tabs = skills.tabs[name].map((tab: any, index: number) => (
+    <Tab tab={tab} key={index + ''} />
+  ));
 
   return (
     <Card shadow="sm" padding="lg" radius="md" withBorder>
-      <Group>
-        <Avatar size={'sm'} src={icon} />
+      <Group pb={12}>
         <Text weight={500}>{name}</Text>
       </Group>
+      {tabs}
     </Card>
+  );
+};
+
+const Tab = ({ tab }: any) => {
+  const { classes } = commomStyles();
+  const icon = iconPrefix + `/images/skill/${tab}.png`;
+
+  return (
+    <>
+      {/* <Text size="sm" weight={500} color="dimmed"> */}
+      <Badge
+        size="lg"
+        color={'gray'}
+        variant="outline"
+        m={4}
+        p={14}
+        styles={{
+          inner: {
+            textTransform: 'none',
+          },
+        }}
+        leftSection={<Avatar size={'xs'} src={icon} radius={0} />}
+      >
+        {tab}
+      </Badge>
+      {/* </Text> */}
+    </>
   );
 };
 
 const Skill = () => {
   const skills: any = SECTIONS.skills;
   const { classes, cx } = commomStyles();
-  const features = skills.list.map((feature: any, index: number) => (
-    <Feature {...feature} key={index + ''} />
-  ));
 
-  const rows = Object.keys(skills.tabs).map((key: string) => (
-    <tr key={key}>
-      <th>{key}</th>
-      <td>
-        <Text size="sm" weight={500} color="dimmed">
-          {skills.tabs[key].map((t: string, idx: number) => (
-            <Badge
-              size="lg"
-              color={getRandomColor(materialColors)}
-              variant="light"
-              m={4}
-              styles={{
-                inner: {
-                  textTransform: 'none',
-                },
-              }}
-            >
-              {t}
-            </Badge>
-          ))}
-        </Text>
-      </td>
-    </tr>
-  ));
+  const gridStyle = [
+    { maxWidth: 980, cols: 2, spacing: 'xl' },
+    { maxWidth: 755, cols: 1, spacing: 'xl' },
+  ];
 
   return (
     <>
@@ -75,20 +59,58 @@ const Skill = () => {
         {skills.title}
       </Title>
 
-      <Table verticalSpacing="md" withBorder>
-        <tbody>{rows}</tbody>
-      </Table>
-
-      {/* <SimpleGrid
+      <SimpleGrid
         // mt={40}
-        cols={4}
-        breakpoints={[
-          { maxWidth: 980, cols: 2, spacing: 'xl' },
-          { maxWidth: 755, cols: 1, spacing: 'xl' },
-        ]}
+        cols={2}
+        breakpoints={gridStyle}
       >
-        {features}
-      </SimpleGrid> */}
+        <SimpleGrid
+          // mt={40}
+          cols={1}
+          breakpoints={gridStyle}
+        >
+          <SimpleGrid
+            // mt={40}
+            cols={1}
+            breakpoints={gridStyle}
+          >
+            <Feature name={'Programming'} skills={skills} />
+          </SimpleGrid>
+
+          <SimpleGrid
+            // mt={40}
+            cols={1}
+            breakpoints={gridStyle}
+          >
+            <Feature name={'Cloud Platforms'} skills={skills} />
+          </SimpleGrid>
+
+          <SimpleGrid
+            // mt={40}
+            cols={1}
+            breakpoints={gridStyle}
+          >
+            <Feature name={'Streams / Verticals'} skills={skills} />
+          </SimpleGrid>
+        </SimpleGrid>
+
+        <SimpleGrid
+          // mt={40}
+          cols={1}
+          breakpoints={gridStyle}
+        >
+          <Feature name={'Frameworks, Applications, Libraries and Tools'} skills={skills} />
+        </SimpleGrid>
+      </SimpleGrid>
+      <SimpleGrid mt={12} cols={1} breakpoints={gridStyle}>
+        <SimpleGrid
+          // mt={40}
+          cols={1}
+          breakpoints={gridStyle}
+        >
+          <Feature name={'Products'} skills={skills} />
+        </SimpleGrid>
+      </SimpleGrid>
     </>
   );
 };
