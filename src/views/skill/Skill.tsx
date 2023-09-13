@@ -4,7 +4,7 @@ import { commomStyles } from '../../styles/commmon';
 
 const Feature = ({ name, skills }: any) => {
   const tabs = skills.tabs[name].map((tab: any, index: number) => (
-    <Tab tab={tab} key={index + ''} />
+    <Tab tab={tab} key={index + ''} name={name} />
   ));
 
   return (
@@ -17,7 +17,7 @@ const Feature = ({ name, skills }: any) => {
   );
 };
 
-const Tab = ({ tab }: any) => {
+const Tab = ({ tab, name }: any) => {
   const { classes } = commomStyles();
   const icon = iconPrefix + `/images/skill/${tab}.png`;
 
@@ -35,7 +35,7 @@ const Tab = ({ tab }: any) => {
             textTransform: 'none',
           },
         }}
-        leftSection={<Avatar size={'xs'} src={icon} radius={0} />}
+        leftSection={name != 'Others' ? <Avatar size={'xs'} src={icon} radius={0} /> : undefined}
       >
         {tab}
       </Badge>
@@ -102,13 +102,20 @@ const Skill = () => {
           <Feature name={'Frameworks, Applications, Libraries and Tools'} skills={skills} />
         </SimpleGrid>
       </SimpleGrid>
-      <SimpleGrid mt={12} cols={1} breakpoints={gridStyle}>
+      <SimpleGrid mt={12} cols={2} breakpoints={gridStyle}>
         <SimpleGrid
           // mt={40}
           cols={1}
           breakpoints={gridStyle}
         >
           <Feature name={'Products'} skills={skills} />
+        </SimpleGrid>
+        <SimpleGrid
+          // mt={40}
+          cols={1}
+          breakpoints={gridStyle}
+        >
+          <Feature name={'Others'} skills={skills} />
         </SimpleGrid>
       </SimpleGrid>
     </>

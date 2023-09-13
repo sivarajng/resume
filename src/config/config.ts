@@ -2,6 +2,24 @@ import { testimonials } from './testimonials';
 
 const iconPrefix = '/resume';
 // const iconPrefix = '';
+
+const SEO = {
+  title: 'Sivaraj Nagaraj | Resume',
+  description: [
+    `Sivaraj Nagaraj, Full-Stack Engineer`,
+    `A Versatile, Full-Stack as well as Data Engineer, helping organizations to achieve business outcomes with my 10
+      years of expertise in software engineering, specifically in modern data stacks and frameworks.`,
+    `Proficient in problem solving using an array of tech stacks and streams like TypeScript, Python, Java, Backend
+      (Micro Services, APIs, gRPC), Frontend (React), DevOps, MLOps, Chat Bots, Mobile App, Cloud (AWS, GCP).`,
+    `Worked in Startup 0-100 and built Products and Features from scratch, which includes large-scale distributed
+      systems, services and event streams with low latency and performance as the default`,
+    `A Business centric Engineer, owned multiple Business Metrics, OKRs and worked with many cross-functional
+      teams like Data Science, Product, Revenue, Infra, Design and Engineering to get the desired business results.`,
+    `My core role includes contributing to Org’s OKR Plans, Architecting, Building Solutions, Product Features,
+      Automations, Optimizations and Improve Metrics to achieve the business goals and outcomes.`,
+  ].join('\n'),
+};
+
 const SECTIONS = {
   linkedin: {
     url: 'https://www.linkedin.com/in/sivaraj-nagaraj/',
@@ -70,9 +88,9 @@ const SECTIONS = {
           `Independently solved business and tech problem statements by developing and productionising in-house solutions like Config Management, Fraud Ops, Data Dashboards, Alert-as-a-Service, Chatbots Automations etc.`,
         ],
         achievement: [
-          'Archited the MPL Frontend App from Scratch.',
+          'Architected the MPL Frontend App from Scratch.',
           'Built low-latency and high scale backend and ML services which are the core part of the MPL App.',
-          'Built handfull of Automations and Optimizations which brought business impacts.',
+          'Built handful of Automations and Optimizations which brought business impacts.',
           'Recognized and got appreciated thrice in Company’s All Hands Meetings for implementing solutions and processes which made positive impacts to the teams and business.',
         ],
       },
@@ -101,11 +119,11 @@ const SECTIONS = {
         to: 'Dec 2017',
         icon: iconPrefix + '/static/brillio.jpg',
         tech: [
-          'React.JS',
+          'React.js',
           'JavaScript',
           'Mobile App Developer',
           'MERN Stack Developer',
-          'Node.JS Developer',
+          'Node.js Developer',
         ],
         summary: [
           'Worked as a MEAN Stack (Node, Angular, MongoDB, Express) Developer by designing and developing both Frontend and Backend modules as well as developing API Services.',
@@ -530,6 +548,89 @@ const SECTIONS = {
         ],
       },
       {
+        name: 'Fraud Ops System (Batch processing and Dashboard)',
+        client: '',
+        coreApplications: [
+          'Next.js',
+          'React.js',
+          'Databricks',
+          'Python',
+          'APIs',
+          'PostgreSQL',
+          'ML',
+        ],
+        teamSize: 8,
+        from: 'from',
+        to: 'to',
+        summary: [
+          `This was one of my self build in-house product to streamline and centralize the Fraud Ops process at MPL.`,
+          `This Fraud Ops System provides a pipeline and Dashboard interface which connects the Potential Fraud Users list identify by ML Systems and allows the Fraud Analysts to take actions on the users to tag them as Fraud or not for low probability cases.`,
+          `The manullay validated data is then used to retrain the ML models to improve the accuracy of the Fraud detection ML Systems.`,
+          `This system had a high upward impact on the business by improving the accuracy of the Fraud detection by 10% by processing more cases with the systsem in place as well as reducing the manual efforts of the Fraud Analysts by almost 50%.`,
+        ],
+        roles: [
+          `To develop and implement a solution from scratch to automate the entire Fraud Ops process.`,
+          `Collarborating with Data Science and Fraud Analyst teams to streamline the process and build a centralized Fraud Ops System.`,
+          `Productionize the system and onboard the Fraud Analysts to use the system.`,
+        ],
+      },
+      {
+        name: 'Alert-as-a-Service',
+        client: '',
+        coreApplications: [
+          'Slack',
+          'Python',
+          'TypeScript',
+          'APIs',
+          'ChatBot',
+          'gRPC',
+          'PostgreSQL',
+          'Incident Management',
+        ],
+        teamSize: 8,
+        from: 'from',
+        to: 'to',
+        summary: [
+          `This was one of my self build in-house product to automate the Alerting and Reporting process for the entire organization.`,
+          `Alert-as-a-Service: Conceptualized and built a shift-left kind service, which tracks multiple activity feeds like builds, incidents, config changes and correlates it via some models and understands context and raises Alerts and Reportings straight to the stakeholders.`,
+          `This was built as a Slack Bot and also as a standalone service which can be integrated with any internal services and APIs.`,
+        ],
+        roles: [
+          `Building Chat Bots with NLP and Intelligence as a Bot first interface to automate various workflows`,
+          `Collarborating with various teams to integrate the service with their internal services and build a centralized Alerting and Reporting system.`,
+        ],
+      },
+      {
+        name: 'Pro Configuration Management System',
+        client: '',
+        coreApplications: [
+          'Apache ZooKeeper',
+          'TypeScript',
+          'React.js',
+          'JSON Schema',
+          'Next.js',
+          'APIs',
+          'ChatBot',
+          'Slack',
+          'gRPC',
+          'PostgreSQL',
+        ],
+        teamSize: 8,
+        from: 'from',
+        to: 'to',
+        summary: [
+          'This was one of my self build in-house product to automate the Alerting and Reporting process for the entire organization.',
+          'Alert-as-a-Service: Conceptualized and built a shift-left kind service, which tracks multiple activity feeds like builds, incidents, config changes and correlates it via some models and understands context and raises Alerts and Reportings straight to the stakeholders.',
+          'This was built as a Slack Bot and also as a standalone service which can be integrated with any internal services and APIs.',
+          'Does Config Schema validation, Role Based Access, Diff and Versioning of Configs, Configs as Code, etc.',
+          'Integrates with Slack and Alerts the users on any config changes.',
+        ],
+        roles: [
+          `Building Chat Bots with NLP and Intelligence as a Bot first interface to automate various workflows`,
+          `Collarborating with various teams to integrate the service with their internal services and build a centralized Alerting and Reporting system.`,
+        ],
+      },
+      {
         name: 'MPL Mobile App (React-Native)',
         client: '',
         coreApplications: ['React-Native', 'Redux', 'JavaScript', 'Android'],
@@ -548,9 +649,37 @@ const SECTIONS = {
         ],
       },
       {
+        name: 'Kubernetes Migration',
+        client: '',
+        coreApplications: [
+          'Kubernetes',
+          'Helm Chart',
+          'Java',
+          'Jenkins',
+          'Harness',
+          'Script',
+          'Docker',
+          'AWS EKS',
+        ],
+        teamSize: 8,
+        from: 'from',
+        to: 'to',
+        summary: [
+          'Had Dockeried and Migrated the existing Python and Java Microservices to Kubernetes Cluster (AWS).',
+          'Had Configured and Deployed the 7+ Microservices including existing and New using Helm Charts and CI/CD Tools',
+          'Configured the CI/CD Pipelines and scripts for the same.',
+        ],
+        roles: [
+          'To Dockerize the existing Python and Java Microservices and Deploy it to Kubernetes Cluster (AWS).',
+          'To Work with DevOps/SRE team to configur and update the CI/CD Pipelines.',
+          'Work with dependencies and other teams to ensure the smooth migration and monitor impacts.',
+          'Setup the respective System Metrics Dashboards along with the DevOps/SRE team.',
+        ],
+      },
+      {
         name: 'MicroApps and Content App',
         client: '',
-        coreApplications: ['React-Native', 'Redux', 'Node.JS', 'MongoDB', 'Google Cloud Platform'],
+        coreApplications: ['React-Native', 'Redux', 'Node.js', 'MongoDB', 'Google Cloud Platform'],
         teamSize: 8,
         from: 'from',
         to: 'to',
@@ -767,6 +896,7 @@ const SECTIONS = {
         'Node.JS',
         'Android',
         'React Native',
+        'Next.JS',
         'Shell',
         'Express.JS',
         'GraphQL',
@@ -827,6 +957,24 @@ const SECTIONS = {
         'Figma',
       ],
       'Cloud Platforms': ['AWS (Amazon Web Services)', 'GCP (Google Cloud Platform)'],
+      Others: [
+        'Consul',
+        'OneLogin',
+        'Vault',
+        'Istio',
+        'Jaeger',
+        'VS Code',
+        'IntelliJ',
+        'PyCharm',
+        'JFrog',
+        'Nexus Repository',
+        'Lens | The Kubernetes IDE',
+        'npm',
+        'Maven',
+        'PyPI',
+        'Postman',
+        'Git',
+      ],
     },
     list: [
       { name: 'Node JS', tag: 'programming', icon: iconPrefix + '/images/skills/nodejs.png' },
@@ -922,4 +1070,4 @@ const SECTIONS = {
   testimonials: testimonials,
 };
 
-export { SECTIONS, iconPrefix };
+export { SECTIONS, iconPrefix, SEO };

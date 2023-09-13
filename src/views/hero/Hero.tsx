@@ -153,7 +153,7 @@ const Hero = () => {
                 leftSection={<IconStarFilled size={12} style={{ marginTop: 8 }} />}
               >
                 <Text size="md" fw={500} color="yellow.9">
-                  Can join in 30 days
+                  Can join in 20 days
                 </Text>
               </Badge>
               <Button

@@ -8,31 +8,37 @@ import { Project } from '../project/Project';
 import { Skill } from '../skill/Skill';
 import { Summary } from '../summary/Summary';
 import { Testimonials } from '../testimonials/Testimonials';
+import { DoubleHeader } from '../../components/DoubleHeader';
 
 const Main = () => {
   const [scroll, scrollTo] = useWindowScroll();
   return (
     <>
-      <Container>
+      <DoubleHeader />
+      <Container id="summary">
         <Hero />
         <Summary />
       </Container>
       <Container size={'lg'}>
         <Divider p={12} mt={24} />
-        <Skill />
+        <div id="technical-skill-sets">
+          <Skill />
+        </div>
         <Divider p={12} mt={24} />
-        <Experience />
+        <div id="professional-experience">
+          <Experience />
+        </div>
         <Divider p={12} mt={24} />
       </Container>
-      <Container size={'lg'}>
+      <Container size={'lg'} id="project-portfolio">
         <Project />
       </Container>
-      <Container size={'lg'}>
+      <Container size={'lg'} id="academic-proficiency">
         <Divider p={12} mt={24} />
         <Academy />
         <Divider p={12} mt={24} />
       </Container>
-      <Container size={'lg'}>
+      <Container size={'lg'} id="testimonials">
         <Testimonials />
         <Space h={120} />
       </Container>
