@@ -4,13 +4,13 @@ const iconPrefix = '/resume';
 // const iconPrefix = '';
 
 const SEO = {
-  title: 'Sivaraj Nagaraj | Resume',
+  title: 'Sivaraj Nagaraj | Full-Stack Engineer | Technical Architect | Resume',
   description: [
     `Sivaraj Nagaraj, Full-Stack Engineer`,
-    `A Versatile, Full-Stack as well as Data Engineer, helping organizations to achieve business outcomes with my 10
+    `A Versatile, Full-Stack Engineer and Technical Architect, helping organizations to achieve business outcomes with my 10
       years of expertise in software engineering, specifically in modern data stacks and frameworks.`,
-    `Proficient in problem solving using an array of tech stacks and streams like TypeScript, Python, Java, Backend
-      (Micro Services, APIs, gRPC), Frontend (React), DevOps, MLOps, Chat Bots, Mobile App, Cloud (AWS, GCP).`,
+    `Proficient in problem solving using an array of tech stacks and streams like JavaScript, Python, Java, Node.js,
+    React.js, TypeScript, Kafka, Backend, Frontend, Microservices, APIs, DevOps, Mobile, Cloud (AWS, GCP).`,
     `Worked in Startup 0-100 and built Products and Features from scratch, which includes large-scale distributed
       systems, services and event streams with low latency and performance as the default`,
     `A Business centric Engineer, owned multiple Business Metrics, OKRs and worked with many cross-functional
@@ -35,24 +35,24 @@ const SECTIONS = {
   views: [
     { id: 'hero', title: 'Hero' },
     { id: 'summary', title: 'Summary' },
-    { id: 'experience', title: 'Professional Experience' },
-    { id: 'skills', title: 'Technical Skill Sets' },
+    { id: 'experience', title: 'Work Experience' },
+    { id: 'skills', title: 'Technical Skills' },
     { id: 'certifications', title: 'Certifications' },
-    { id: 'academy', title: 'Academic Proficeincy' },
+    { id: 'academy', title: 'Education' },
     { id: 'projects', title: 'Project Portfolio' },
   ],
   hero: {
     title: 'Sivaraj Nagaraj',
-    description: 'Full-Stack Engineer | Data Engineer | Architect',
+    description: 'Full-Stack Engineer | Staff Engineer | Technical Architect',
   },
   summary: {
     title: 'Summary',
     description: '',
     list: [
-      `<b style="font-weight:500;">A Versatile, Full-Stack as well as Data Engineer</b>, helping organizations to achieve business outcomes with my 10
-      years of expertise in software engineering, specifically in modern data stacks and frameworks.`,
-      `<b style="font-weight:500;">Proficient in problem solving using an array of tech stacks and streams</b> like <b style="font-weight:500;">TypeScript, Python, Java, Backend
-      (Micro Services, APIs, gRPC), Frontend (React), DevOps, MLOps, Chat Bots, Mobile App, Cloud (AWS, GCP)</b>.`,
+      `<b style="font-weight:500;">A Versatile, Full-Stack Engineer and Technical Architect,</b>, helping organizations to achieve business outcomes with my <b style="font-weight:500;">10
+      years of expertise in software engineering,</b> specifically in modern data stacks and frameworks.`,
+      `<b style="font-weight:500;">Proficient in problem solving using an array of tech stacks and streams</b> like <b style="font-weight:500;">JavaScript, Python, Java, Node.js,
+      React.js, TypeScript, Kafka, Backend, Frontend, Microservices, APIs, DevOps, Mobile, Cloud (AWS, GCP).</b>.`,
       `<b style="font-weight:500;">Worked in Startup 0-100 and built Products and Features from scratch</b>, which includes large-scale distributed
       systems, services and event streams with low latency and performance as the default`,
       `<b style="font-weight:500;">A Business centric Engineer, owned multiple Business Metrics, OKRs</b> and worked with many cross-functional
@@ -62,7 +62,7 @@ const SECTIONS = {
     ],
   },
   experiences: {
-    title: 'Professional Experience',
+    title: 'Work Experience',
     description: '',
     list: [
       {
@@ -179,7 +179,7 @@ const SECTIONS = {
     ],
   },
   academy: {
-    title: 'Academic Proficiency',
+    title: 'Education',
     // description: 'Education and certification that I have obtained.',
     list: [
       {
@@ -877,7 +877,7 @@ const SECTIONS = {
   ],
 
   skills: {
-    title: 'Technical Skill Sets',
+    title: 'Technical Skills',
     description:
       'I have worked on a wide range of technologies and tools. I have listed the ones I have worked on extensively.',
 

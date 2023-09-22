@@ -6,9 +6,9 @@ const props = {
   mainLinks: [
     { link: '#summary', label: 'Summary' },
     { link: '#technical-skill-sets', label: 'Technical Skills' },
-    { link: '#professional-experience', label: 'Professional Experience' },
+    { link: '#professional-experience', label: 'Work Experience' },
     { link: '#project-portfolio', label: 'Project Portfolio' },
-    { link: '#academic-proficiency', label: 'Academic Proficiency' },
+    { link: '#academic-proficiency', label: 'Education' },
     { link: '#testimonials', label: 'Testimonials' },
   ],
 };

@@ -153,13 +153,13 @@ const Hero = () => {
                 leftSection={<IconStarFilled size={12} style={{ marginTop: 8 }} />}
               >
                 <Text size="md" fw={500} color="yellow.9">
-                  Can join in 20 days
+                  Immediate joiner
                 </Text>
               </Badge>
               <Button
                 download
                 component="a"
-                href="/resume/static/Resume_Sivaraj-Nagaraj_Data_Full-Stack_Engineer_10YrExp.pdf"
+                href="/resume/static/Resume_Sivaraj-Nagaraj_Full-Stack_Engineer_10YrExp.pdf"
                 size="sm"
                 leftIcon={<IconDownload size={12} />}
                 compact
