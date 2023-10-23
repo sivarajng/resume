@@ -118,7 +118,7 @@ export function DoubleHeader({ mainLinks = props.mainLinks }: DoubleHeaderProps)
 
   return (
     <div className={`navbar ${stickyClass}`}>
-      <Header height={HEADER_HEIGHT} mb={120}>
+      <Header height={HEADER_HEIGHT} mb={44}>
         <Container className={classes.inner}>
           <div className={classes.links}>
             <Group spacing={0} position="right" className={classes.mainLinks}>

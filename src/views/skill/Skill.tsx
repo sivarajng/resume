@@ -1,4 +1,4 @@
-import { Avatar, Badge, Card, Group, SimpleGrid, Table, Text, Title } from '@mantine/core';
+import { Avatar, Badge, Card, Group, SimpleGrid, Space, Table, Text, Title } from '@mantine/core';
 import { SECTIONS, iconPrefix } from '../../config/config';
 import { commomStyles } from '../../styles/commmon';
 
@@ -19,7 +19,7 @@ const Feature = ({ name, skills }: any) => {
 
 const Tab = ({ tab, name }: any) => {
   const { classes } = commomStyles();
-  const icon = iconPrefix + `/images/skill/${tab}.png`;
+  const icon = iconPrefix + `/images/skill/${tab.replace('/', '')}.png`;
 
   return (
     <>
@@ -59,64 +59,19 @@ const Skill = () => {
         {skills.title}
       </Title>
 
-      <SimpleGrid
-        // mt={40}
-        cols={2}
-        breakpoints={gridStyle}
-      >
-        <SimpleGrid
-          // mt={40}
-          cols={1}
-          breakpoints={gridStyle}
-        >
-          <SimpleGrid
-            // mt={40}
-            cols={1}
-            breakpoints={gridStyle}
-          >
-            <Feature name={'Programming'} skills={skills} />
-          </SimpleGrid>
-
-          <SimpleGrid
-            // mt={40}
-            cols={1}
-            breakpoints={gridStyle}
-          >
-            <Feature name={'Cloud Platforms'} skills={skills} />
-          </SimpleGrid>
-
-          <SimpleGrid
-            // mt={40}
-            cols={1}
-            breakpoints={gridStyle}
-          >
-            <Feature name={'Streams / Verticals'} skills={skills} />
-          </SimpleGrid>
-        </SimpleGrid>
-
-        <SimpleGrid
-          // mt={40}
-          cols={1}
-          breakpoints={gridStyle}
-        >
-          <Feature name={'Frameworks, Applications, Libraries and Tools'} skills={skills} />
-        </SimpleGrid>
+      <SimpleGrid cols={2} breakpoints={gridStyle}>
+        <Feature name={'Programming'} skills={skills} />
+        <Feature name={'Frontend and Mobile'} skills={skills} />
+        <Feature name={'Backend'} skills={skills} />
+        <Feature name={'Data'} skills={skills} />
+        <Feature name={'Cloud'} skills={skills} />
+        <Feature name={'DevOps'} skills={skills} />
+        <Feature name={'Product'} skills={skills} />
+        <Feature name={'Secondary Skills'} skills={skills} />
       </SimpleGrid>
-      <SimpleGrid mt={12} cols={2} breakpoints={gridStyle}>
-        <SimpleGrid
-          // mt={40}
-          cols={1}
-          breakpoints={gridStyle}
-        >
-          <Feature name={'Products'} skills={skills} />
-        </SimpleGrid>
-        <SimpleGrid
-          // mt={40}
-          cols={1}
-          breakpoints={gridStyle}
-        >
-          <Feature name={'Others'} skills={skills} />
-        </SimpleGrid>
+      <Space h={'md'} />
+      <SimpleGrid cols={1} breakpoints={gridStyle}>
+        <Feature name={'Others'} skills={skills} />
       </SimpleGrid>
     </>
   );

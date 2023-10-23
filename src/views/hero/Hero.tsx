@@ -146,14 +146,14 @@ const Hero = () => {
           <Center p={0}>
             <Group>
               <Badge
-                color="yellow.9"
-                variant="light"
+                variant="gradient"
+                gradient={{ from: 'indigo', to: 'grape', deg: 45 }}
                 styles={{ inner: { textTransform: 'none' } }}
                 p={'sm'}
-                leftSection={<IconStarFilled size={12} style={{ marginTop: 8 }} />}
+                leftSection={<IconStarFilled size={12} style={{ marginTop: 8, color: 'white' }} />}
               >
-                <Text size="md" fw={500} color="yellow.9">
-                  Immediate joiner
+                <Text size="md" fw={500} color="white">
+                  Immediate Joiner
                 </Text>
               </Badge>
               <Button
@@ -163,7 +163,7 @@ const Hero = () => {
                 size="sm"
                 leftIcon={<IconDownload size={12} />}
                 compact
-                variant="light"
+                variant="outline"
               >
                 Resume
               </Button>
