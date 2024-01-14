@@ -78,14 +78,16 @@ const SECTIONS = {
           'TypeScript',
         ],
         summary: [
-          `As a Full-Stack and Data Engineer working on various backend systems and Data pipelines like Kafka Event Driven Systems, Ingestion, Segmentation, etc. Developed large-scale backend microservices and Frontend dashboards.`,
-          `Key architect of the MPL Frontend App, built from ground up including core flow like Login, Payments, Wallet, etc.`,
-          `Works closely with the Data Science and cross-functional teams and builds solutions which bring business impacts.`,
-          `Independently solved business and tech problem statements by developing and productionising in-house solutions like Config Management, Fraud Ops, Data Dashboards, Alert-as-a-Service, Chatbots Automations etc.`,
+          `<b style="font-weight:500;">Worked as Architect and Full-Stack Engineer in Data Engineering</b>, responsible for architecting, building and optimizing backend microservices at large-scale and low-latencies like Home Page Recommendations, Dynamic Price Forecasting, Realtime Kafka pipelines, User A/B Feature Service etc. and Frontends like Data Platform, Data Quality/Observability Dashboard, Fraud Ops Dashboard, Config Management, User Affiliation etc. with End-2-End Ownership and Deployments.`
+          , `<b style="font-weight:500;">Key architect of the MPL Mobile Frontend App which I built from scratch</b> including core modules like Login, Home, Payments, etc with performance optimizations and done 120+ releases which has 85+ millions of User Base.`
+          , `<b style="font-weight:500;">Worked closely with the Data Science and other cross-functional teams</b> and contributed in business metrics improvements like User Retention, User Engagement, reduced Customer Acquisition Cost, Infra Cost reduction etc.`
+          , `<b style="font-weight:500;">Independently solved business and tech problem statements</b> by developing and productionising in-house solutions like Config Management, Fraud Ops, Data Quality/Observability Dashboards, Alert-as-a-Service, Chatbots Automations etc.`
+          , `<b style="font-weight:500;">Recognized and got appreciated thrice in Company’s All Hands Meetings</b> for implementing stable solutions and processes.`
+          , `<b style="font-weight:500;">Worked at positions of ML Engineer and DevOps Engineer</b> thus owned and implemented multiple ML Inferencing Services, MLOps practices for Data Science team, as well as built CI/CD pipelines, Cloud, worked on Containerization (Kubernetes) of various backend services, build app monitoring dashboards, alerts and Slack based Chat Bot automations frameworks etc`
         ],
         achievement: [
-          'Architected the MPL Frontend App from Scratch.',
-          'Built low-latency and high scale backend and ML services which are the core part of the MPL App.',
+          'Architected the MPL Frontend App from Scratch with optimized performance, which has 85+ million registered users.',
+          'Built low-latency (P999 <50ms) and large-scale (~ 2000 RPS) backend services and ML services which are the core part of the MPL App.',
           'Built handful of Automations and Optimizations which brought business impacts.',
           'Recognized and got appreciated thrice in Company’s All Hands Meetings for implementing solutions and processes which made positive impacts to the teams and business.',
         ],
@@ -490,6 +492,24 @@ const SECTIONS = {
     description: 'Here are some of my projects that I have worked on.',
     list: [
       {
+        name: 'MPL Mobile App (React-Native)',
+        client: '',
+        coreApplications: ['React.js', 'React-Native', 'Redux', 'JavaScript', 'Android'],
+        teamSize: 8,
+        from: 'from',
+        to: 'to',
+        summary: [
+          'Built the MPL Mobile App from scratch using React.js, React-Native and Redux. which has 85+ million registered users.',
+          'Integrated with an array of third-party services like Firebase, CleverTap, Sentry.io, Appsflyer, Agora, SendBird etc.',
+          "Key person for the App's architecture, design and development",
+        ],
+        roles: [
+          "Building the App's architecture and design.",
+          "Work on the design and development of the App's UI.",
+          'Build varoius core frontend modules like Login, Home Page, Wallet, Profile, Refer & Earn, Help Center, Notifications, User Tasks, Payments of the MPL App.',
+        ],
+      },
+      {
         name: 'Data Product and Services',
         client: '',
         coreApplications: [
@@ -624,24 +644,6 @@ const SECTIONS = {
         roles: [
           `Building Chat Bots with NLP and Intelligence as a Bot first interface to automate various workflows`,
           `Collarborating with various teams to integrate the service with their internal services and build a centralized Alerting and Reporting system.`,
-        ],
-      },
-      {
-        name: 'MPL Mobile App (React-Native)',
-        client: '',
-        coreApplications: ['React-Native', 'Redux', 'JavaScript', 'Android'],
-        teamSize: 8,
-        from: 'from',
-        to: 'to',
-        summary: [
-          'Built the MPL Mobile App from scratch using React-Native and Redux.',
-          'Integrated with an array of third-party services like Firebase, CleverTap, Sentry.io, Appsflyer, etc.',
-          "Key person for the App's architecture and design.",
-        ],
-        roles: [
-          "Building the App's architecture and design.",
-          "Work on the design and development of the App's UI.",
-          'Build varoius core frontend modules like Login, Home Page, Wallet, Profile, Refer & Earn, Help Center, Notifications, User Tasks, Payments of the MPL App.',
         ],
       },
       {
@@ -878,46 +880,6 @@ const SECTIONS = {
       'I have worked on a wide range of technologies and tools. I have listed the ones I have worked on extensively.',
 
     tabs_old: {
-      Programming: ['TypeScript', 'JavaScript', 'Python', 'Java', 'SQL'],
-      'Frameworks, Applications, Libraries and Tools': [
-        'Flask',
-        'FastAPI',
-        'Spring Boot',
-        'JPA',
-        'Apache Camel EIP',
-        'React.JS',
-
-        'Redux',
-        'Node.JS',
-        'Android',
-        'React Native',
-        'Next.JS',
-        'Shell',
-        'Express.JS',
-        'GraphQL',
-        'Jupyter Notebooks',
-        'SQLAlchemy',
-        'PostgreSQL',
-        'MongoDB',
-        'Redis',
-        'Apache Spark',
-        'RedShift',
-        'Pandas',
-        'Machine Learning',
-
-        'Kubernetes',
-        'Docker',
-        'Apache ZooKeeper',
-        'Grafana',
-        'Kibana',
-        'CI-CD',
-        'Jenkins',
-        'Apache Kafka Streams',
-        'ETL',
-        'NLP',
-        'MLOps',
-        'MLFlow',
-      ],
       'Streams / Verticals': [
         'UI Dashboards',
         'Mobile Apps',
@@ -932,24 +894,6 @@ const SECTIONS = {
         'Automations',
         'UI Wireframes',
       ],
-      Products: [
-        'Databricks (Notebooks, Jobs, ML, SQL)',
-        'SageMaker',
-        'Atlan',
-        'Jira',
-        'Confluence',
-        'Bitbucket',
-        'Redis Labs',
-        'MongoDB Atlas',
-        'Confluent Kafka',
-        'Sentry',
-        'Harness',
-        'Tableau',
-        'Keycloak',
-
-        'Figma',
-      ],
-      'Cloud Platforms': ['AWS (Amazon Web Services)', 'GCP (Google Cloud Platform)'],
     },
     tabs: {
       Programming: ['JavaScript', 'Python', 'Java', 'TypeScript', 'SQL'],
@@ -977,6 +921,7 @@ const SECTIONS = {
         'Android',
         'Mantine UI',
         'Ant Design',
+        'Material UI',
       ],
       Data: [
         'PostgreSQL',
@@ -989,8 +934,12 @@ const SECTIONS = {
         'Apache Camel EIP',
         'PySpark',
         'Pandas',
+        'Neptune DB (GraphDB)',
+        'JPA',
         'Streaming Data',
         'Apache Airflow',
+        'SQLAlchemy',
+        'Prisma ORM'
       ],
 
       DevOps: [
@@ -1001,6 +950,7 @@ const SECTIONS = {
         'Harness',
         'Grafana',
         'Kibana',
+        'Git',
         'Consul',
         'Istio',
       ],
@@ -1018,14 +968,20 @@ const SECTIONS = {
         'Bitbucket',
         'Atlan',
         'Sentry',
+        'Redis Labs',
+        'MongoDB Atlas',
+        'Confluent Kafka',
+        'CleverTap',
         'Keycloak',
         'Tableau',
+        'Anodot',
+        'AWS SageMaker',
         'Figma',
       ],
       'Secondary Skills': [
+        'Machine Learning',
         'MLOps',
         'ML Engineer',
-        'Machine Learning',
         'MLFlow',
         'Kubeflow',
         'OAuth/SSO Integrations',
@@ -1033,7 +989,6 @@ const SECTIONS = {
         'Chatbot Developments with NLP',
         'Scripting',
         'Automations',
-        'Git',
         'ML Feature Store',
         'Slack Apps and Bots',
       ],
@@ -1045,6 +1000,7 @@ const SECTIONS = {
         'IntelliJ',
         'PyCharm',
         'JFrog',
+        'Jupyter Notebooks',
         'Nexus Repository',
         'Lens | The Kubernetes IDE',
         'npm',

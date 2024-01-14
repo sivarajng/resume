@@ -145,7 +145,7 @@ const Hero = () => {
           </Center>
           <Center p={0}>
             <Group>
-              <Badge
+              {/* <Badge
                 variant="gradient"
                 gradient={{ from: 'indigo', to: 'grape', deg: 45 }}
                 styles={{ inner: { textTransform: 'none' } }}
@@ -155,7 +155,7 @@ const Hero = () => {
                 <Text size="md" fw={500} color="white">
                   Immediate Joiner
                 </Text>
-              </Badge>
+              </Badge> */}
               <Button
                 download
                 component="a"
